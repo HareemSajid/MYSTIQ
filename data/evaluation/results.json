@@ -1,0 +1,981 @@
+{
+ "environment": {
+  "embedder": "local-lsa-tfidf",
+  "nli": {
+   "model": null,
+   "loaded": false,
+   "fallback_reason": "ModuleNotFoundError: No module named 'sentence_transformers'"
+  },
+  "spacy": "en_core_web_sm",
+  "gemini_used": false,
+  "seed": 7,
+  "requested_backend": "auto"
+ },
+ "retrieval": {
+  "ablation": {
+   "dense": {
+    "dev": {
+     "n": 32,
+     "precision@3": 0.323,
+     "recall@3": 0.828,
+     "ndcg@3": 0.741,
+     "mrr": 0.764,
+     "hit@1": 0.625,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 18.8,
+      "p50": 15.4,
+      "p95": 23.4
+     },
+     "failures": [
+      {
+       "query": "Who last held the emerald before it was locked away?",
+       "relevant": [
+        "lord_note"
+       ],
+       "got": [
+        "",
+        "eleanor_statement",
+        "study_report",
+        "lord_note",
+        "whitmore_statement"
+       ]
+      },
+      {
+       "query": "What did the threatening letter demand?",
+       "relevant": [
+        "letter",
+        "torn_note"
+       ],
+       "got": [
+        "reed_statement",
+        "",
+        "helen_statement",
+        "letter",
+        "police_notice"
+       ]
+      },
+      {
+       "query": "Did Blackwood tell anyone what the letter said?",
+       "relevant": [
+        "private_letter"
+       ],
+       "got": [
+        "helen_statement",
+        "reed_statement",
+        "interview",
+        "",
+        "private_letter"
+       ]
+      },
+      {
+       "query": "Who sat at the foot of the table?",
+       "relevant": [
+        "seating"
+       ],
+       "got": [
+        "hale_statement",
+        "service_record",
+        "mills_statement",
+        "seating",
+        ""
+       ]
+      }
+     ],
+     "isolation_ok": true
+    },
+    "fresh": {
+     "n": 24,
+     "precision@3": 0.375,
+     "recall@3": 0.979,
+     "ndcg@3": 0.923,
+     "mrr": 0.91,
+     "hit@1": 0.833,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 15.2,
+      "p50": 14.9,
+      "p95": 19.8
+     },
+     "failures": [],
+     "isolation_ok": true
+    },
+    "all": {
+     "n": 56,
+     "precision@3": 0.345,
+     "recall@3": 0.893,
+     "ndcg@3": 0.819,
+     "mrr": 0.826,
+     "hit@1": 0.714,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 9.8,
+      "p50": 9.7,
+      "p95": 11.6
+     },
+     "failures": [
+      {
+       "query": "Who last held the emerald before it was locked away?",
+       "relevant": [
+        "lord_note"
+       ],
+       "got": [
+        "",
+        "eleanor_statement",
+        "study_report",
+        "lord_note",
+        "whitmore_statement"
+       ]
+      },
+      {
+       "query": "What did the threatening letter demand?",
+       "relevant": [
+        "letter",
+        "torn_note"
+       ],
+       "got": [
+        "reed_statement",
+        "",
+        "helen_statement",
+        "letter",
+        "police_notice"
+       ]
+      },
+      {
+       "query": "Did Blackwood tell anyone what the letter said?",
+       "relevant": [
+        "private_letter"
+       ],
+       "got": [
+        "helen_statement",
+        "reed_statement",
+        "interview",
+        "",
+        "private_letter"
+       ]
+      },
+      {
+       "query": "Who sat at the foot of the table?",
+       "relevant": [
+        "seating"
+       ],
+       "got": [
+        "hale_statement",
+        "service_record",
+        "mills_statement",
+        "seating",
+        ""
+       ]
+      }
+     ],
+     "isolation_ok": true
+    }
+   },
+   "bm25": {
+    "dev": {
+     "n": 32,
+     "precision@3": 0.312,
+     "recall@3": 0.781,
+     "ndcg@3": 0.764,
+     "mrr": 0.827,
+     "hit@1": 0.75,
+     "hit@5": 0.969,
+     "latency_ms": {
+      "mean": 9.9,
+      "p50": 9.3,
+      "p95": 13.2
+     },
+     "failures": [
+      {
+       "query": "Who last held the emerald before it was locked away?",
+       "relevant": [
+        "lord_note"
+       ],
+       "got": [
+        "",
+        "eleanor_statement",
+        "access_ledger",
+        "lord_note",
+        "study_report"
+       ]
+      },
+      {
+       "query": "Did Blackwood tell anyone what the letter said?",
+       "relevant": [
+        "private_letter"
+       ],
+       "got": [
+        "helen_statement",
+        "reed_statement",
+        "",
+        "blake_statement",
+        "margaret_statement"
+       ]
+      },
+      {
+       "query": "Who kept asking where Blackwood would be on Friday?",
+       "relevant": [
+        "diary"
+       ],
+       "got": [
+        "delivery_record",
+        "police_notice",
+        "private_letter",
+        "diary",
+        "helen_statement"
+       ]
+      },
+      {
+       "query": "Who was sitting by the left-hand door?",
+       "relevant": [
+        "seating_arrangement"
+       ],
+       "got": [
+        "shaw_statement",
+        "bennett_statement",
+        "emily_statement",
+        "",
+        "seating_arrangement"
+       ]
+      },
+      {
+       "query": "Who sat at the foot of the table?",
+       "relevant": [
+        "seating"
+       ],
+       "got": [
+        "hale_statement",
+        "mills_statement",
+        "service_record",
+        "seating",
+        ""
+       ]
+      }
+     ],
+     "isolation_ok": true
+    },
+    "fresh": {
+     "n": 24,
+     "precision@3": 0.375,
+     "recall@3": 0.979,
+     "ndcg@3": 0.919,
+     "mrr": 0.896,
+     "hit@1": 0.792,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 10.7,
+      "p50": 10.2,
+      "p95": 13.4
+     },
+     "failures": [],
+     "isolation_ok": true
+    },
+    "all": {
+     "n": 56,
+     "precision@3": 0.339,
+     "recall@3": 0.866,
+     "ndcg@3": 0.83,
+     "mrr": 0.856,
+     "hit@1": 0.768,
+     "hit@5": 0.982,
+     "latency_ms": {
+      "mean": 9.4,
+      "p50": 9.2,
+      "p95": 10.9
+     },
+     "failures": [
+      {
+       "query": "Who last held the emerald before it was locked away?",
+       "relevant": [
+        "lord_note"
+       ],
+       "got": [
+        "",
+        "eleanor_statement",
+        "access_ledger",
+        "lord_note",
+        "study_report"
+       ]
+      },
+      {
+       "query": "Did Blackwood tell anyone what the letter said?",
+       "relevant": [
+        "private_letter"
+       ],
+       "got": [
+        "helen_statement",
+        "reed_statement",
+        "",
+        "blake_statement",
+        "margaret_statement"
+       ]
+      },
+      {
+       "query": "Who kept asking where Blackwood would be on Friday?",
+       "relevant": [
+        "diary"
+       ],
+       "got": [
+        "delivery_record",
+        "police_notice",
+        "private_letter",
+        "diary",
+        "helen_statement"
+       ]
+      },
+      {
+       "query": "Who was sitting by the left-hand door?",
+       "relevant": [
+        "seating_arrangement"
+       ],
+       "got": [
+        "shaw_statement",
+        "bennett_statement",
+        "emily_statement",
+        "",
+        "seating_arrangement"
+       ]
+      },
+      {
+       "query": "Who sat at the foot of the table?",
+       "relevant": [
+        "seating"
+       ],
+       "got": [
+        "hale_statement",
+        "mills_statement",
+        "service_record",
+        "seating",
+        ""
+       ]
+      }
+     ],
+     "isolation_ok": true
+    }
+   },
+   "hybrid": {
+    "dev": {
+     "n": 32,
+     "precision@3": 0.344,
+     "recall@3": 0.859,
+     "ndcg@3": 0.793,
+     "mrr": 0.826,
+     "hit@1": 0.719,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 9.4,
+      "p50": 9.2,
+      "p95": 10.6
+     },
+     "failures": [
+      {
+       "query": "Who last held the emerald before it was locked away?",
+       "relevant": [
+        "lord_note"
+       ],
+       "got": [
+        "",
+        "eleanor_statement",
+        "study_report",
+        "lord_note",
+        "message"
+       ]
+      },
+      {
+       "query": "Who kept asking where Blackwood would be on Friday?",
+       "relevant": [
+        "diary"
+       ],
+       "got": [
+        "helen_statement",
+        "delivery_record",
+        "police_notice",
+        "diary",
+        ""
+       ]
+      },
+      {
+       "query": "Who sat at the foot of the table?",
+       "relevant": [
+        "seating"
+       ],
+       "got": [
+        "hale_statement",
+        "mills_statement",
+        "service_record",
+        "seating",
+        ""
+       ]
+      }
+     ],
+     "isolation_ok": true
+    },
+    "fresh": {
+     "n": 24,
+     "precision@3": 0.375,
+     "recall@3": 0.979,
+     "ndcg@3": 0.95,
+     "mrr": 0.938,
+     "hit@1": 0.875,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 10.6,
+      "p50": 10.2,
+      "p95": 13.7
+     },
+     "failures": [],
+     "isolation_ok": true
+    },
+    "all": {
+     "n": 56,
+     "precision@3": 0.357,
+     "recall@3": 0.911,
+     "ndcg@3": 0.86,
+     "mrr": 0.874,
+     "hit@1": 0.786,
+     "hit@5": 1,
+     "latency_ms": {
+      "mean": 10.8,
+      "p50": 10.1,
+      "p95": 15.0
+     },
+     "failures": [
+      {
+       "query": "Who last held the emerald before it was locked away?",
+       "relevant": [
+        "lord_note"
+       ],
+       "got": [
+        "",
+        "eleanor_statement",
+        "study_report",
+        "lord_note",
+        "message"
+       ]
+      },
+      {
+       "query": "Who kept asking where Blackwood would be on Friday?",
+       "relevant": [
+        "diary"
+       ],
+       "got": [
+        "helen_statement",
+        "delivery_record",
+        "police_notice",
+        "diary",
+        ""
+       ]
+      },
+      {
+       "query": "Who sat at the foot of the table?",
+       "relevant": [
+        "seating"
+       ],
+       "got": [
+        "hale_statement",
+        "mills_statement",
+        "service_record",
+        "seating",
+        ""
+       ]
+      }
+     ],
+     "isolation_ok": true
+    }
+   }
+  },
+  "n_queries": 56,
+  "precision@3": 0.357,
+  "recall@3": 0.911,
+  "ndcg@3": 0.86,
+  "mrr": 0.874,
+  "hit@1": 0.786,
+  "hit@5": 1,
+  "case_isolation_ok": true,
+  "off_topic_flagged_insufficient": "8/8",
+  "legit_queries_wrongly_flagged_insufficient": "0/56",
+  "latency_ms": {
+   "mean": 10.8,
+   "p50": 10.1,
+   "p95": 15.0
+  },
+  "failures": [
+   {
+    "query": "Who last held the emerald before it was locked away?",
+    "relevant": [
+     "lord_note"
+    ],
+    "got": [
+     "",
+     "eleanor_statement",
+     "study_report",
+     "lord_note",
+     "message"
+    ]
+   },
+   {
+    "query": "Who kept asking where Blackwood would be on Friday?",
+    "relevant": [
+     "diary"
+    ],
+    "got": [
+     "helen_statement",
+     "delivery_record",
+     "police_notice",
+     "diary",
+     ""
+    ]
+   },
+   {
+    "query": "Who sat at the foot of the table?",
+    "relevant": [
+     "seating"
+    ],
+    "got": [
+     "hale_statement",
+     "mills_statement",
+     "service_record",
+     "seating",
+     ""
+    ]
+   }
+  ],
+  "embedder": "local-lsa-tfidf"
+ },
+ "ner": {
+  "mystiq (spaCy + case lexicon + temporal)": {
+   "precision": 0.963,
+   "recall": 0.981,
+   "f1": 0.972,
+   "tp": 52,
+   "fp": 2,
+   "fn": 1,
+   "latency_ms_mean": 4.3,
+   "per_label_recall": {
+    "DATE": "3/3",
+    "LOCATION": "11/11",
+    "OBJECT": "9/9",
+    "ORGANISATION": "0/1",
+    "OTHER": "1/1",
+    "PERSON": "17/17",
+    "TIME": "11/11"
+   }
+  },
+  "baseline (spaCy only)": {
+   "precision": 0.706,
+   "recall": 0.453,
+   "f1": 0.552,
+   "tp": 24,
+   "fp": 10,
+   "fn": 29,
+   "latency_ms_mean": 3.8,
+   "per_label_recall": {
+    "DATE": "3/3",
+    "LOCATION": "0/11",
+    "OBJECT": "0/9",
+    "ORGANISATION": "0/1",
+    "OTHER": "1/1",
+    "PERSON": "9/17",
+    "TIME": "11/11"
+   }
+  }
+ },
+ "temporal": {
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "ambiguity_flag_accuracy": "2/2",
+  "n": 27,
+  "latency_ms_mean": 0.03,
+  "errors": []
+ },
+ "coreference": {
+  "dev": {
+   "accuracy": 0.917,
+   "correct": 11,
+   "total": 12,
+   "precision_when_resolving": 1.0,
+   "coverage": 0.917,
+   "abstentions": 1,
+   "correct_abstentions": 0,
+   "errors": [
+    {
+     "text": "Dr. Moore saw Carter in the library. He was putting away the case.",
+     "pronoun": "He",
+     "expected": "carter",
+     "got": null,
+     "abstained": true
+    }
+   ]
+  },
+  "fresh": {
+   "accuracy": 1.0,
+   "correct": 6,
+   "total": 6,
+   "precision_when_resolving": 1.0,
+   "coverage": 0.5,
+   "abstentions": 3,
+   "correct_abstentions": 3,
+   "errors": []
+  },
+  "all": {
+   "accuracy": 0.944,
+   "correct": 17,
+   "total": 18,
+   "precision_when_resolving": 1.0,
+   "coverage": 0.778,
+   "abstentions": 4,
+   "correct_abstentions": 3,
+   "errors": [
+    {
+     "text": "Dr. Moore saw Carter in the library. He was putting away the case.",
+     "pronoun": "He",
+     "expected": "carter",
+     "got": null,
+     "abstained": true
+    }
+   ]
+  },
+  "accuracy": 0.944,
+  "correct": 17,
+  "total": 18,
+  "errors": [
+   {
+    "text": "Dr. Moore saw Carter in the library. He was putting away the case.",
+    "pronoun": "He",
+    "expected": "carter",
+    "got": null,
+    "abstained": true
+   }
+  ]
+ },
+ "nli": {
+  "dev": {
+   "n": 13,
+   "accuracy": 1.0,
+   "per_class": {
+    "contradiction": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 8,
+     "fp": 0,
+     "fn": 0
+    },
+    "entailment": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "neutral": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 5,
+     "fp": 0,
+     "fn": 0
+    }
+   },
+   "confusion_gold_by_pred": {
+    "contradiction": {
+     "contradiction": 8,
+     "entailment": 0,
+     "neutral": 0
+    },
+    "entailment": {
+     "contradiction": 0,
+     "entailment": 0,
+     "neutral": 0
+    },
+    "neutral": {
+     "contradiction": 0,
+     "entailment": 0,
+     "neutral": 5
+    }
+   },
+   "false_contradictions": 0,
+   "errors": []
+  },
+  "fresh": {
+   "n": 15,
+   "accuracy": 1.0,
+   "per_class": {
+    "contradiction": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 6,
+     "fp": 0,
+     "fn": 0
+    },
+    "entailment": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0
+    },
+    "neutral": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 8,
+     "fp": 0,
+     "fn": 0
+    }
+   },
+   "confusion_gold_by_pred": {
+    "contradiction": {
+     "contradiction": 6,
+     "entailment": 0,
+     "neutral": 0
+    },
+    "entailment": {
+     "contradiction": 0,
+     "entailment": 1,
+     "neutral": 0
+    },
+    "neutral": {
+     "contradiction": 0,
+     "entailment": 0,
+     "neutral": 8
+    }
+   },
+   "false_contradictions": 0,
+   "errors": []
+  },
+  "heldout": {
+   "n": 12,
+   "accuracy": 0.833,
+   "per_class": {
+    "contradiction": {
+     "precision": 1.0,
+     "recall": 0.8,
+     "f1": 0.889,
+     "tp": 4,
+     "fp": 0,
+     "fn": 1
+    },
+    "entailment": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1
+    },
+    "neutral": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.857,
+     "tp": 6,
+     "fp": 2,
+     "fn": 0
+    }
+   },
+   "confusion_gold_by_pred": {
+    "contradiction": {
+     "contradiction": 4,
+     "entailment": 0,
+     "neutral": 1
+    },
+    "entailment": {
+     "contradiction": 0,
+     "entailment": 0,
+     "neutral": 1
+    },
+    "neutral": {
+     "contradiction": 0,
+     "entailment": 0,
+     "neutral": 6
+    }
+   },
+   "false_contradictions": 0,
+   "errors": [
+    {
+     "premise": "I was in the estate office until ten.",
+     "hypothesis": "Miss Grey was seen in the estate office at 9:30 PM.",
+     "gold": "entailment",
+     "pred": "neutral",
+     "finding": "no_relation"
+    },
+    {
+     "premise": "I never set foot in the workshop.",
+     "hypothesis": "Captain Finch entered the workshop at 8:20 PM.",
+     "gold": "contradiction",
+     "pred": "neutral",
+     "finding": "no_relation"
+    }
+   ]
+  },
+  "all": {
+   "n": 40,
+   "accuracy": 0.95,
+   "per_class": {
+    "contradiction": {
+     "precision": 1.0,
+     "recall": 0.947,
+     "f1": 0.973,
+     "tp": 18,
+     "fp": 0,
+     "fn": 1
+    },
+    "entailment": {
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667,
+     "tp": 1,
+     "fp": 0,
+     "fn": 1
+    },
+    "neutral": {
+     "precision": 0.905,
+     "recall": 1.0,
+     "f1": 0.95,
+     "tp": 19,
+     "fp": 2,
+     "fn": 0
+    }
+   },
+   "confusion_gold_by_pred": {
+    "contradiction": {
+     "contradiction": 18,
+     "entailment": 0,
+     "neutral": 1
+    },
+    "entailment": {
+     "contradiction": 0,
+     "entailment": 1,
+     "neutral": 1
+    },
+    "neutral": {
+     "contradiction": 0,
+     "entailment": 0,
+     "neutral": 19
+    }
+   },
+   "false_contradictions": 0,
+   "errors": [
+    {
+     "premise": "I was in the estate office until ten.",
+     "hypothesis": "Miss Grey was seen in the estate office at 9:30 PM.",
+     "gold": "entailment",
+     "pred": "neutral",
+     "finding": "no_relation"
+    },
+    {
+     "premise": "I never set foot in the workshop.",
+     "hypothesis": "Captain Finch entered the workshop at 8:20 PM.",
+     "gold": "contradiction",
+     "pred": "neutral",
+     "finding": "no_relation"
+    }
+   ]
+  },
+  "backend": "symbolic-frames+gating",
+  "latency_ms_mean": 7.4,
+  "latency_ms_p95": 20.2
+ },
+ "answer_evaluation": {
+  "accuracy": 1.0,
+  "n": 14,
+  "rows": [
+   {
+    "case": 1,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 1,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.0
+   },
+   {
+    "case": 2,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 2,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.2
+   },
+   {
+    "case": 3,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 3,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.2
+   },
+   {
+    "case": 4,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 4,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.0
+   },
+   {
+    "case": 5,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 5,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.0
+   },
+   {
+    "case": 6,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 6,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.0
+   },
+   {
+    "case": 7,
+    "expected": "good",
+    "pred": "good",
+    "fraction": 1.0
+   },
+   {
+    "case": 7,
+    "expected": "poor",
+    "pred": "poor",
+    "fraction": 0.0
+   }
+  ]
+ },
+ "end_to_end_latency": {
+  "ask_ms_mean": 116.2,
+  "interrogate_ms_mean": 13.2
+ },
+ "runtime_seconds": 10.5
+}

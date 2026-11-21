@@ -1,0 +1,379 @@
+number: 6
+slug: poisoned-invitation
+title: The Poisoned Invitation
+difficulty: Hard
+setting: Ravenscroft House, Belgrave Square — Saturday, 5 December 1891
+summary: >-
+  The host of a private dinner falls gravely ill after the toast. Whose invitation was it, really?
+introduction: >-
+  Sir Lucian Ravenscroft gave a small dinner at Ravenscroft House on Saturday, 5 December 1891, intending to announce a
+  large transfer of Brazilian railway shares after the toast. At about half past nine he collapsed and Dr. Whitcombe was
+  summoned. The physician says his illness was caused by something he drank at dinner, and that Sir Lucian will recover.
+  The police believe someone interfered with his loving cup. Each guest remembers the evening a little differently.
+objective: >-
+  Establish who was where, and when, and which statements cannot all be true. This case is solved by language, seating and
+  timing alone.
+places: [dining room, drawing room, sideboard, kitchen, terrace, head of the table, foot of the table]
+objects: [loving cup, salver, invitation, decanter, guest list, place card]
+others:
+  - {name: Sir Lucian Ravenscroft, gender: m, role: the host, aliases: [Sir Lucian, the host, Ravenscroft]}
+  - {name: Mr. Stokes, gender: m, role: the butler, aliases: [Stokes, the butler]}
+  - {name: Henry Tilling, gender: m, role: the footman, aliases: [Tilling, the footman]}
+  - {name: Dr. Whitcombe, gender: m, role: the physician, aliases: [Whitcombe, the physician, the doctor]}
+  - {name: Captain Ross, gender: m, role: the original guest, aliases: [Captain Ross, Ross]}
+suspects:
+  - key: margaret
+    name: Lady Margaret Hartwell
+    role: Sir Lucian's business associate
+    gender: f
+    age: 50
+    aliases: [Lady Margaret, Margaret, Lady Hartwell, the associate]
+    background: >-
+      A widow who co-owns a railway syndicate with Sir Lucian. Dignified, grand in manner, fond of being right and
+      prone to small social untruths.
+    motive: >-
+      Sir Lucian planned to transfer the Brazilian shares away from her syndicate.
+    relationship: Business associate of Sir Lucian; she arranged Mr. Mills's invitation.
+    whereabouts: Says she arrived at half past seven; went with the ladies to the drawing room after the toast.
+    personality: Haughty, gossipy, quick to attribute blame, protective of her dignity.
+    private_knowledge: >-
+      She arrived at five past eight, not half past seven, because of fog, and is embarrassed about it. She wrote the invitation
+      to Mr. Mills in Sir Lucian's name. She thought she saw Mr. Hale carry the cup, but she sat far from the sideboard and
+      mistook one gentleman for another.
+    does_not_know: Which gentleman actually carried the cup.
+    deflect: "Really, Inspector, one does not examine one's friends at the dinner table."
+    topics:
+      - q: "When did you arrive? Why did you say half past seven? What time did you reach the house?"
+        a: >-
+          At half past seven, as I recall. The fog was dreadful, so perhaps it was a little later. I did not consult my watch.
+      - q: "Who carried the cup to Sir Lucian? Who took the loving cup? Did you see who carried the cup?"
+        a: >-
+          I saw a gentleman carry the cup to Sir Lucian at about five past nine. I took it to be Mr. Hale, but I confess I was
+          seated some distance away.
+      - q: "Why did you invite Mr. Mills? Who is Edward Mills? Why did you write his invitation?"
+        a: >-
+          Captain Ross was indisposed and Sir Lucian asked me to find a gentleman to fill the place. Mr. Mills was
+          recommended by my solicitor. I wrote the card on Sir Lucian's behalf.
+      - q: "Do you have a motive? Were the shares to be taken from you? Did you quarrel with Sir Lucian?"
+        a: >-
+          Sir Lucian intended an announcement about the Brazilian shares. I was displeased, naturally. But I am a lady and
+          I went with the ladies to the drawing room.
+      - q: "Who do you suspect? What about Mr. Hale, Susan or Mr. Mills?"
+        a: >-
+          I would not slander anyone. Mr. Hale has debts; the girl is only a servant; Mr. Mills is a stranger to me.
+  - key: hale
+    name: Robert Hale
+    role: a family friend
+    gender: m
+    age: 47
+    aliases: [Hale, Mr. Hale, Robert, the family friend]
+    background: >-
+      An old friend of Sir Lucian's late brother, who gambles and borrows. Charming, vague about money and apt to
+      change the subject.
+    motive: >-
+      Owes Sir Lucian eight hundred pounds, repayable on demand.
+    relationship: Family friend of Sir Lucian.
+    whereabouts: Seated at Sir Lucian's left; says he did not leave his chair before the toast.
+    personality: Easygoing on the surface, uneasy when asked about money, observant of other guests.
+    private_knowledge: >-
+      He remained in his chair until the toast. He saw the gentleman at the foot of the table rise at about two minutes past
+      nine, go to the sideboard and carry the cup to Sir Lucian. He did not know the gentleman's name; he had not met him
+      before that evening.
+    does_not_know: Mr. Mills's name until the introductions at the table.
+    deflect: "Come, Inspector, I am Sir Lucian's friend. I should have given my own arm to save him this."
+    topics:
+      - q: "Did you leave your chair before the toast? Where were you at five past nine? Did you go to the sideboard?"
+        a: >-
+          I never left my chair before the toast. I sat at Sir Lucian's left throughout. You may ask Tilling the footman.
+      - q: "Who carried the cup to Sir Lucian? Did you carry the cup? Who took the cup from the sideboard?"
+        a: >-
+          Not I. The gentleman at the foot of the table rose and carried it to Sir Lucian. I had not met him before that
+          evening.
+      - q: "Do you owe Sir Lucian money? Do you have a motive? Why would you want him harmed?"
+        a: >-
+          I owe him a sum, and he is the kind of friend who does not call it in. I should be the last man to wish him harm.
+      - q: "Who sat at the foot of the table? Who is the gentleman at the foot? Who is Mr. Mills?"
+        a: >-
+          Mr. Mills sat at the foot, by the plan. A stranger to me, a Manchester man. Lady Margaret introduced him.
+      - q: "Why does Lady Margaret say you carried the cup? Why do your accounts differ?"
+        a: >-
+          Lady Margaret sits at the far side and has poor eyes for faces across a table. She has mistaken one gentleman for
+          another.
+  - key: susan
+    name: Susan Clarke
+    role: the household assistant
+    gender: f
+    age: 24
+    aliases: [Susan, Miss Clarke, the assistant, the household assistant, the maid]
+    background: >-
+      Household assistant to Sir Lucian for three years, trusted with the loving cup and the dinner service. Nervous, honest
+      and afraid of being blamed.
+    motive: >-
+      None known; she lives in terror of dismissal.
+    relationship: Servant of Sir Lucian.
+    whereabouts: Filled the loving cup at nine, then went to the kitchen to fetch the salver; back at about three minutes past.
+    personality: Anxious, over-eager to please, repeats detail when frightened, never lies but forgets small things.
+    private_knowledge: >-
+      She polished the loving cup at five to nine and filled it at nine. She left it on the sideboard to fetch the salver
+      from the kitchen. When she returned at 9:03 the gentleman from the foot of the table was at the sideboard and said he
+      would carry the cup as a courtesy; she let him, because he was a guest.
+    does_not_know: What was done to the cup.
+    deflect: "Oh, please, sir, I only did what I was told. I did nothing wrong."
+    topics:
+      - q: "What did you do with the cup? When did you fill the cup? Where was the cup at nine?"
+        a: >-
+          I polished it at five to nine and filled it at nine. I left it on the sideboard and went to the kitchen to fetch the
+          salver, sir.
+      - q: "Who carried the cup? Who took the cup from the sideboard? Who was at the sideboard?"
+        a: >-
+          When I came back at about three minutes past nine, Mr. Mills was at the sideboard. He said he would carry the cup to Sir
+          Lucian as a courtesy, and I let him, sir, because he was a guest.
+      - q: "Did you go near the cup after nine? Were you in the dining room? Did you leave the cup?"
+        a: >-
+          Only to fetch the salver, sir, and I was in the kitchen when Cook can say. Three minutes, no more.
+      - q: "Who is Mr. Mills? Did you know him? Had you seen him before?"
+        a: >-
+          He is the gentleman who sat at the foot of the table. I had not seen him before that evening.
+      - q: "Why were you alone with the cup? Who else came near? Why did nobody watch?"
+        a: >-
+          The cup is always left on the sideboard until the toast, sir. Nobody would think to watch it.
+  - key: mills
+    name: Edward Mills
+    role: a visiting guest
+    gender: m
+    age: 42
+    aliases: [Mills, Mr. Mills, Edward, the visitor, the visiting guest, the gentleman at the foot of the table, the gentleman at the foot]
+    background: >-
+      A Manchester financier who joined the dinner at the last moment in place of Captain Ross. Affable, ambitious, and a
+      member of a syndicate that stands to profit from Sir Lucian's refusal to sign.
+    motive: >-
+      His syndicate would profit if Sir Lucian were prevented from signing the Brazilian transfer.
+    relationship: Visiting guest, a stranger to Sir Lucian, invited through Lady Margaret.
+    whereabouts: Seated at the foot of the table; claims he never rose or went near the sideboard.
+    personality: Smooth, polite, quick with a joke, answers evasively and with apparent candour.
+    private_knowledge: >-
+      SECRET (never admit): at 9:02 he rose from the foot of the table, went to the sideboard and offered to carry the cup, then
+      carried it to Sir Lucian at the toast. He sent a telegram to a Manchester associate that said Sir Lucian would sign
+      nothing after Saturday. He never confesses; he denies going near the sideboard.
+    does_not_know: That the footman noted him rising.
+    deflect: "My dear Inspector, I am a stranger here. I came for a dinner and look what has come of it."
+    topics:
+      - q: "Did you go near the sideboard? Did you rise from your seat? Did you touch the cup?"
+        a: >-
+          I never rose from my chair until Sir Lucian fell ill. I did not go near the sideboard and I did not touch the cup.
+      - q: "Where were you sitting? Which seat was yours? Who sat at the foot of the table?"
+        a: >-
+          I sat at the foot of the table, as the plan will show. Far from the host, as you can see, and far from any sideboard.
+      - q: "Who carried the cup to Sir Lucian? Why does Susan say you carried the cup? Why does the footman say a gentleman rose?"
+        a: >-
+          Susan is a frightened girl and Tilling is a footman. They may be thinking of another gentleman. I remained in my chair.
+      - q: "What does your telegram mean? Why did you send a message about Sir Lucian signing nothing? What did you mean?"
+        a: >-
+          I meant what a man of business means, Inspector. That the matter would be settled, one way or the other. It was a
+          figure of speech.
+      - q: "Why were you invited? Do you have a motive? Does your syndicate gain?"
+        a: >-
+          I was invited to fill a vacancy. As for my syndicate, it has an interest in the shares like any other. That is not a
+          crime.
+      - q: "Who do you suspect? What about Lady Margaret or Mr. Hale?"
+        a: >-
+          Lady Margaret is out of sorts when thwarted, and Mr. Hale is a man in debt. I should not like to say more.
+documents:
+  - key: invitations
+    title: Invitation Cards
+    doc_type: Letter
+    datetime: November – December 1891
+    author: Sir Lucian Ravenscroft; Lady Margaret Hartwell
+    suspect: null
+    content: |
+      INVITATION CARDS — copies kept by the household.
+
+      To Lady Margaret Hartwell (21 Nov.): Sir Lucian Ravenscroft requests the pleasure of your company at dinner on Saturday
+      the fifth of December, at eight o'clock. A matter of business will be announced.
+      To Mr. Robert Hale (22 Nov.): Sir Lucian Ravenscroft requests the pleasure of your company at dinner on Saturday the
+      fifth of December, at eight o'clock.
+      To Mr. Edward Mills (2 Dec.): At Sir Lucian's request, Lady Margaret Hartwell writes to ask whether you will dine at
+      Ravenscroft House on Saturday the fifth, in place of Captain Ross, who is indisposed. Dinner is at eight.
+  - key: guest_list
+    title: Guest List
+    doc_type: Register
+    datetime: Saturday, 5 December 1891
+    author: Mr. Stokes, butler
+    suspect: null
+    content: |
+      GUEST LIST — kept by Mr. Stokes at the door.
+
+      Lady Margaret Hartwell — arrived 8:05 PM (detained by fog).
+      Mr. Robert Hale — arrived 7:40 PM.
+      Mr. Edward Mills — arrived 7:50 PM; first visit to the house; a stranger to Sir Lucian, whom he met in the hall.
+      Household in attendance: Mr. Stokes (butler), Henry Tilling (footman), Susan Clarke (household assistant), Mrs. Brand (cook).
+  - key: seating
+    title: Seating Arrangement
+    doc_type: Plan
+    datetime: Saturday, 5 December 1891
+    author: Mr. Stokes, butler
+    suspect: null
+    content: |
+      SEATING ARRANGEMENT — the dining table, Ravenscroft House.
+
+      The sideboard stands against the east wall, beside the head of the table.
+      Head of the table: Sir Lucian Ravenscroft.
+      On his right: Lady Margaret Hartwell.
+      On his left: Mr. Robert Hale.
+      Middle of the table, right side: Captain Ross's place (vacant).
+      Foot of the table: Mr. Edward Mills.
+      The loving cup is set at the host's place before dinner and carried to him from the sideboard for the toast.
+  - key: schedule
+    title: Dinner Schedule
+    doc_type: Schedule
+    datetime: Saturday, 5 December 1891
+    author: Mrs. Brand, cook
+    suspect: null
+    content: |
+      DINNER SCHEDULE — Ravenscroft House.
+
+      7:45 PM — Sherry in the drawing room.
+      8:00 PM — Dinner announced.
+      8:15 PM — Soup. 8:30 PM — Fish. 8:50 PM — Roast.
+      8:55 PM — Susan Clarke polishes the loving cup at the sideboard.
+      9:00 PM — Loving cup filled by Susan Clarke and left on the sideboard while she fetches the salver.
+      9:05 PM — Toast; Sir Lucian drinks first.
+      9:10 PM — Ladies withdraw to the drawing room.
+      9:30 PM — Sir Lucian taken ill.
+  - key: service_record
+    title: Household Service Record
+    doc_type: Record
+    datetime: Saturday, 5 December 1891
+    author: Mr. Stokes, butler; Henry Tilling, footman
+    suspect: null
+    content: |
+      HOUSEHOLD SERVICE RECORD — kept by Mr. Stokes with notes by H. Tilling.
+
+      8:55 PM — Loving cup polished and placed on sideboard (S.C.).
+      9:00 PM — Cup filled (S.C.). S.C. goes to the kitchen for the salver.
+      9:02 PM — Tilling notes that the gentleman at the foot of the table rises and crosses to the sideboard.
+      9:03 PM — S.C. returns; the same gentleman is at the sideboard and carries the cup to the host's end of the table.
+      9:05 PM — Toast. Sir Lucian drinks first.
+      9:30 PM — Sir Lucian taken ill; Dr. Whitcombe summoned at 9:40 PM.
+  - key: private_message
+    title: A Private Message
+    doc_type: Telegram
+    datetime: Thursday, 3 December 1891, 4:15 PM
+    author: Edward Mills to J. Dray, Manchester
+    suspect: mills
+    content: |
+      TELEGRAM (copy obtained from the Charing Cross office).
+
+      To J. Dray, Manchester. Sir L. to sign nothing after Saturday. Will see to it personally. — E.M.
+  - key: margaret_statement
+    title: Statement of Lady Margaret Hartwell
+    doc_type: Statement
+    datetime: Sunday, 6 December 1891
+    author: Lady Margaret Hartwell
+    suspect: margaret
+    content: |
+      Statement of Lady Margaret Hartwell.
+
+      I arrived at half past seven. At about five past nine I saw Mr. Hale carry the loving cup to Sir Lucian for the toast. I
+      was seated some distance from the sideboard. After the toast I went with the ladies to the drawing room. I know nothing
+      more.
+  - key: hale_statement
+    title: Statement of Mr. Robert Hale
+    doc_type: Statement
+    datetime: Sunday, 6 December 1891
+    author: Robert Hale
+    suspect: hale
+    content: |
+      Statement of Robert Hale.
+
+      I sat at Sir Lucian's left and never left my chair before the toast. The loving cup was carried to Sir Lucian by the
+      gentleman at the foot of the table, whom I had not met before that evening. I know of no reason for anyone to wish Sir
+      Lucian harm.
+  - key: susan_statement
+    title: Statement of Miss Susan Clarke
+    doc_type: Statement
+    datetime: Sunday, 6 December 1891
+    author: Susan Clarke
+    suspect: susan
+    content: |
+      Statement of Susan Clarke.
+
+      I filled the loving cup at nine and left it on the sideboard to fetch the salver from the kitchen. When I came back at
+      about three minutes past nine, Mr. Mills was at the sideboard. He said he would carry the cup to Sir Lucian as a courtesy,
+      and I let him, because he was a guest.
+  - key: mills_statement
+    title: Statement of Mr. Edward Mills
+    doc_type: Statement
+    datetime: Sunday, 6 December 1891
+    author: Edward Mills
+    suspect: mills
+    content: |
+      Statement of Edward Mills.
+
+      I sat at the foot of the table from the soup until the toast. I never rose from my chair until Sir Lucian was taken ill,
+      and I did not go near the sideboard or touch the cup. I am a stranger in this house and know of no reason why anyone
+      should have wished Sir Lucian harm.
+statements:
+  - {suspect: margaret, doc: margaret_statement, text: "I arrived at half past seven. At about five past nine I saw Mr. Hale carry the loving cup to Sir Lucian for the toast."}
+  - {suspect: hale, doc: hale_statement, text: "I sat at Sir Lucian's left and never left my chair before the toast."}
+  - {suspect: hale, doc: hale_statement, text: "The loving cup was carried to Sir Lucian by the gentleman at the foot of the table, whom I had not met before that evening."}
+  - {suspect: susan, doc: susan_statement, text: "When I came back at about three minutes past nine, Mr. Mills was at the sideboard. He said he would carry the cup to Sir Lucian as a courtesy."}
+  - {suspect: mills, doc: mills_statement, text: "I never rose from my chair until Sir Lucian was taken ill, and I did not go near the sideboard or touch the cup."}
+hints:
+  - >-
+    Dr. Watson: "Consider opportunity. The cup was filled at nine and the toast was at five past. Who handled the cup in those
+    five minutes, and who says they did not?"
+  - >-
+    Dr. Watson: "People describe one another differently: 'Mr. Hale' to Lady Margaret, 'the gentleman at the foot of the
+    table' to Mr. Hale and the footman. Use the seating arrangement to learn who sat at the foot."
+  - >-
+    Dr. Watson: "Compare Mr. Mills's claim that he never left his chair with the service record at 9:02, Miss Clarke's
+    account, and his telegram of Thursday."
+solution:
+  culprit: mills
+  what: >-
+    Edward Mills rose from the foot of the table, went to the sideboard while the loving cup stood unattended, and carried it to
+    Sir Lucian — meaning he alone interfered with the host's cup, while denying he ever left his chair.
+  when: Between 9:00 PM and 9:05 PM, between the filling of the cup and the toast.
+  sequence:
+    - "3 Dec, 4:15 PM — Mills telegraphs that Sir Lucian will sign nothing after Saturday and he will see to it personally."
+    - "9:00 PM — Susan fills the cup and leaves it on the sideboard."
+    - "9:02 PM — The footman notes the gentleman at the foot of the table (Mills) cross to the sideboard."
+    - "9:03 PM — Susan returns; Mills carries the cup to Sir Lucian."
+    - "9:05 PM — Sir Lucian drinks first at the toast."
+    - "9:30 PM — Sir Lucian collapses."
+  explanation: >-
+    The seating plan places Mills at the foot of the table. Hale and the footman refer to 'the gentleman at the foot'; Susan
+    names him as Mills; the service record notes the same gentleman at the sideboard at 9:02. Lady Margaret's naming of Hale is
+    a mistaken identification by a distant witness, and Hale was seated beside Sir Lucian. Mills claimed he never rose and never
+    went near the sideboard, contradicting three sources, and his telegram shows motive.
+  insight: >-
+    'The gentleman at the foot of the table' resolves to Mills through the seating arrangement; Lady Margaret's misidentification
+    and Mills's denial are both contradicted by the footman and Susan.
+  required_evidence: [seating, service_record, susan_statement, mills_statement, private_message]
+  related_evidence: [schedule, hale_statement, margaret_statement, invitations, guest_list]
+  concepts:
+    - id: c1
+      text: The gentleman at the foot of the table is Mills according to the seating arrangement, and the footman saw him cross to the sideboard at 9:02.
+      keywords: [foot, seating, "9:02", sideboard, footman]
+    - id: c2
+      text: Mills claimed he never rose or went near the sideboard, contradicting Susan, Hale and the service record.
+      keywords: [never rose, contradict, susan, hale, sideboard]
+    - id: c3
+      text: Lady Margaret mistook Hale for the gentleman who carried the cup because she sat far away; his telegram shows motive.
+      keywords: [margaret, mistaken, telegram, motive, hale]
+  what_options:
+    - {id: a, text: "Mills left his seat at the foot of the table and carried the cup, which was left unattended at the sideboard.", correct: true}
+    - {id: b, text: "Robert Hale tampered with the cup before the toast.", correct: false}
+    - {id: c, text: "Susan Clarke altered the cup while polishing it at 8:55 PM.", correct: false}
+    - {id: d, text: "Lady Margaret carried the cup to Sir Lucian herself.", correct: false}
+  when_options:
+    - {id: a, text: "Between 9:00 PM and 9:05 PM, before the toast.", correct: true}
+    - {id: b, text: "At 7:50 PM when Mills arrived.", correct: false}
+    - {id: c, text: "At 9:30 PM when Sir Lucian collapsed.", correct: false}
+    - {id: d, text: "During the soup at 8:15 PM.", correct: false}
+  insight_options:
+    - {id: a, text: "The gentleman at the foot of the table is Mills; his denial is contradicted by Susan, Tilling's record and his own telegram, while Lady Margaret was mistaken about Hale.", correct: true}
+    - {id: b, text: "Lady Margaret's arrival time proves she tampered with the cup.", correct: false}
+    - {id: c, text: "Hale's debts prove he carried the cup.", correct: false}
+    - {id: d, text: "Susan's absence in the kitchen proves she did it.", correct: false}

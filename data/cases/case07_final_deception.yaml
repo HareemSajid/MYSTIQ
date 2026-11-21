@@ -1,0 +1,458 @@
+number: 7
+slug: final-deception
+title: The Final Deception
+difficulty: Very Hard
+setting: Hargreave House, Cavendish Row — Friday, 27 November 1891
+summary: >-
+  A wealthy collector vanishes from a locked room. Everyone has an alibi. No single clue gives the answer.
+introduction: >-
+  Mr. Septimus Hargreave, the collector, was last seen entering his Curio Room at half past nine on Friday, 27 November 1891.
+  At half past ten the household found the door locked and the key missing. When it was forced at a quarter past eleven the room
+  was empty, the window bolted, and a letter lay on the desk. The letter says Mr. Hargreave has gone abroad. Every suspect
+  has an alibi that seems to hold. This is your final examination, Detective.
+objective: >-
+  Combine at least three independent pieces of evidence — words, keys, times and an overlooked document — to show who is
+  responsible. No single document gives the answer.
+places: [Curio Room, garden door, garden gate, library, hall, cabinet, coal-hole, Kensington, club, Society, Cavendish Row]
+objects: [letter, key, Key A, Key B, key cabinet, jade, Fenwick jade, veil, receipt, note, telegram, diary]
+others:
+  - {name: Septimus Hargreave, gender: m, role: the collector, aliases: [Mr. Hargreave, Hargreave, the collector, Septimus, Mr. H., the master]}
+  - {name: Inspector Hollis, gender: m, role: the inspector, aliases: [Hollis, the inspector]}
+  - {name: Mr. Dobbs, gender: m, role: the hall porter, aliases: [Dobbs, the hall porter]}
+suspects:
+  - key: black
+    name: Arthur Black
+    role: Hargreave's business partner
+    gender: m
+    age: 52
+    aliases: [Black, Mr. Black, Arthur, the partner]
+    background: >-
+      Co-owner of Hargreave & Black, Antiquaries. Impatient with Hargreave's reluctance to sell the collection. Practical, blunt,
+      with a reputation for hard bargains.
+    motive: >-
+      Wanted the Lisbon sale of the collection; Hargreave kept refusing.
+    relationship: Business partner of Septimus Hargreave.
+    whereabouts: Dined with Mr. Hargreave until half past seven, then at his club until half past ten.
+    personality: Blunt, impatient, answers directly and bluntly, dislikes riddles.
+    private_knowledge: >-
+      He dined with Hargreave in the study until 7:30 and then went to his club, where he stayed until 10:30. He was named in the
+      letter, which surprised and angered him. He did not write it.
+    does_not_know: Who wrote the letter.
+    deflect: "I am a plain man. Ask me about business and I will tell you plainly."
+    topics:
+      - q: "Where were you on Friday night? Where were you at ten? Where were you at 9:45?"
+        a: >-
+          At my club from about eight until half past ten. The porter and half the members saw me. I dined with Septimus until
+          half past seven first.
+      - q: "Do you have a motive? Did you want the collection sold? Why does the letter name you?"
+        a: >-
+          I wanted the Lisbon sale, yes, and he refused, yes. I am named in the letter because someone wants me blamed. I
+          did not write it.
+      - q: "Who has keys to the Curio Room? Who had access to the key cabinet?"
+        a: >-
+          Septimus carries one. The spare is in the cabinet, which Ford keeps. I never touched either.
+      - q: "Who do you suspect? What about Eleanor, James, Victor or Margaret?"
+        a: >-
+          I will not slander the household. I will say Mrs. Reed was forever after that jade.
+  - key: white
+    name: Eleanor White
+    role: Hargreave's personal secretary
+    gender: f
+    age: 32
+    aliases: [Eleanor, Miss White, the secretary]
+    background: >-
+      Hargreave's secretary for four years. Neat, quick and discreet, wears spectacles, and is quietly proud that the master
+      trusts her with his will.
+    motive: >-
+      Named in Hargreave's will; but she gains nothing from his disappearance that she would not have gained otherwise.
+    relationship: Personal secretary of Septimus Hargreave.
+    whereabouts: Typing letters in the library from nine until half past ten; Ford passed at a quarter to ten.
+    personality: Precise, quiet, slightly formal, reports exactly what she heard and saw.
+    private_knowledge: >-
+      She typed in the library from nine to half past ten. She heard Ford pass at a quarter to ten and also heard faint voices
+      in the garden at about ten, which she did not investigate. She does not wear a veil.
+    does_not_know: Who wrote the letter.
+    deflect: "I only record what I know, Inspector. Mr. Hargreave valued that in me."
+    topics:
+      - q: "Where were you at nine? Where were you at ten? What were you doing?"
+        a: >-
+          In the library, typing the week's letters from nine until half past ten. Mr. Ford passed the door at a quarter to ten.
+      - q: "Did you hear anything? Did you hear voices in the garden? What did you notice?"
+        a: >-
+          At about ten I heard faint voices in the garden, I believe two. I thought the coalmen. I did not look.
+      - q: "Do you wear a veil? Who wears a veil? Is there a lady with a veil?"
+        a: >-
+          I wear spectacles, not a veil. Mrs. Reed is the only lady of our acquaintance who wears a veil; she is in widow's
+          weeds.
+      - q: "What does the will say? Do you benefit? Do you have a motive?"
+        a: >-
+          I am remembered in the will, but a small sum. I would have more by his staying alive.
+      - q: "Who do you suspect? What about Arthur, James, Victor or Margaret?"
+        a: >-
+          I have no evidence. Mr. Black is angry, Mrs. Reed is persistent, Mr. Lane is a scholar. That is all I can say.
+  - key: ford
+    name: James Ford
+    role: the household manager
+    gender: m
+    age: 49
+    aliases: [Ford, James, Mr. Ford, the household manager, the manager]
+    background: >-
+      Hargreave's household manager for fifteen years. Keeper of the keys, schedules and registers. Meticulous, loyal,
+      anxious about being blamed for a missing key.
+    motive: >-
+      None known; devoted to his master.
+    relationship: Household manager and keeper of the key register.
+    whereabouts: On the carriage from 4:15 to 6:00 PM; on night rounds of the ground floor from 9:30 to 10:30 PM.
+    personality: Formal, orderly, quotes the register, fussy about times.
+    private_knowledge: >-
+      He issued Key B to Mrs. Reed at 4:00 PM for the jade and left with the carriage at 4:15 PM. He did not check the cabinet
+      afterwards. At 9:20 he carried a note delivered by a boy to the Curio Room. He did night rounds from 9:30 to 10:30 and
+      passed the library at a quarter to ten. He never saw a lady in a veil. He knows Mrs. Reed wears a veil.
+    does_not_know: What the note said.
+    deflect: "The register will tell you, sir. I keep it accurately."
+    topics:
+      - q: "Who had the key? Who took Key B? Who returned the key?"
+        a: >-
+          I issued Key B to Mrs. Reed at four o'clock to view the jade. The register says she returned it at half past four, in her
+          own hand. I had left with the carriage at a quarter past four.
+      - q: "Where were you at 9:45? What were your rounds? Where were you at ten?"
+        a: >-
+          On my night rounds of the ground floor from half past nine to half past ten. I passed the library at a quarter to ten and
+          heard Miss White typing.
+      - q: "Did you deliver a note to Mr. Hargreave? What was the note? Who sent it?"
+        a: >-
+          At twenty past nine a boy brought a note and I carried it to the Curio Room myself. I do not know what it said.
+      - q: "Was the garden door open? Who had access to the garden door? What about the coal delivery?"
+        a: >-
+          The garden door is bolted at nine on every night but Friday, when the coalmen come, and it was unbolted until ten.
+      - q: "Does Mrs. Reed wear a veil? Who wears a veil? Did you see a lady?"
+        a: >-
+          Mrs. Reed always wears her widow's veil. I saw no lady that night, sir, on my rounds.
+  - key: lane
+    name: Victor Lane
+    role: a visiting historian
+    gender: m
+    age: 45
+    aliases: [Lane, Mr. Lane, Victor, the historian, the visiting historian]
+    background: >-
+      A historian of Roman glass who was to inspect the collection on Saturday. Pleasant, forgetful, absorbed in his work.
+    motive: >-
+      Hoped to be allowed to publish the collection's catalogue.
+    relationship: Visiting scholar and correspondent of Septimus Hargreave.
+    whereabouts: At a lecture of the Antiquarian Society from eight until half past ten.
+    personality: Genial, absent-minded, anxious to be helpful, apt to ramble.
+    private_knowledge: >-
+      He sent a telegram that afternoon saying he could not attend that week and would call on Saturday. He was at a lecture of
+      the Antiquarian Society, where the Secretary can vouch for him. He sent no note to the garden gate.
+    does_not_know: Who forged his initial.
+    deflect: "I am only an historian, Inspector. I deal in the dead, not in the missing."
+    topics:
+      - q: "Did you send a note? Did you write the note signed L? Did you ask Mr. Hargreave to the garden gate?"
+        a: >-
+          I sent only a telegram, that afternoon, to say I could not come that week. I did not send any note. Someone has used my
+          initial.
+      - q: "Where were you at ten? Where were you that night?"
+        a: >-
+          At the Antiquarian Society's lecture from eight until half past ten. The Secretary will vouch for me.
+      - q: "Do you have a motive? Why do you want the collection? Did you want the catalogue?"
+        a: >-
+          I hoped to publish a catalogue. That is a scholar's hope, not a motive for anything.
+      - q: "Who do you suspect? What about Arthur, Eleanor, James or Margaret?"
+        a: >-
+          I could not say. Mrs. Reed was always charming to me, but very curious about the jade.
+  - key: reed
+    name: Margaret Reed
+    role: a family acquaintance
+    gender: f
+    age: 48
+    aliases: [Mrs. Reed, Margaret, Reed, the acquaintance, the widow, the lady in the veil, the veiled lady]
+    background: >-
+      A widow of the late Colonel Reed who has haunted the house for months over the Fenwick jade, which she believes her husband
+      was cheated of. Gracious, persistent, always in her widow's veil.
+    motive: >-
+      Believes the Fenwick jade was promised to her late husband; Hargreave meant to bequeath it to a museum on Monday.
+    relationship: Family acquaintance of Septimus Hargreave.
+    whereabouts: Left Hargreave House at ten past five; at home in Kensington by six; retired early with a headache.
+    personality: Gracious, patient, soft-voiced, fond of her own turns of phrase, never raises her voice.
+    private_knowledge: >-
+      SECRET (never admit): she kept Key B after writing in the register that she had returned it. She entered by the garden door
+      at about 9:35 PM, veiled, while the coalmen were at work. At about 9:45 Mr. Hargreave left the Curio Room to meet a person
+      he thought was Mr. Lane at the garden gate, following a forged note; she locked the room from outside after leaving the
+      letter on the desk, and took the key. She wrote the letter. She will not confess and will deflect with grace.
+    does_not_know: That the coal merchant's receipt records a veiled lady.
+    deflect: "My dear Inspector, I am only a widow. I cannot think what I have done to be so questioned."
+    topics:
+      - q: "Where were you at ten? Where were you on Friday night? Were you at home?"
+        a: >-
+          I left Cavendish Row at ten past five and was in Kensington by six. I dined alone and retired early with a headache.
+          My maid heard me go up.
+      - q: "Did you return the key? Why did you write that you returned Key B? Where is Key B?"
+        a: >-
+          I wrote in the register that I had returned it, because I had put it back where I was told to put it. Mr. Ford was
+          out with the carriage, so I did as I thought right.
+      - q: "Why do you want the Fenwick jade? Do you have a motive? Did Mr. Hargreave refuse you?"
+        a: >-
+          The jade was promised to my late husband. Mr. Hargreave thought otherwise. I hold no grudge; I am a patient woman.
+      - q: "Did you write the letter? Do you call it a cabinet of curiosities? Why does the letter use that phrase?"
+        a: >-
+          It is a pretty phrase and many people use it. I would not claim it as my own. I did not write to Mr. Hargreave.
+      - q: "Were you at the garden door? Were you the lady in the veil? Did you go to the house at night?"
+        a: >-
+          Many ladies wear veils in London, Inspector, especially in November. I was at home in Kensington.
+      - q: "Who do you suspect? What about Arthur, Eleanor, James or Victor?"
+        a: >-
+          Mr. Black wished the collection sold, and he is named in the letter. I should look closely at him.
+documents:
+  - key: letter
+    title: The Original Letter on the Desk
+    doc_type: Letter
+    datetime: Friday, 27 November 1891 (found 11:15 PM)
+    author: Signed "Septimus Hargreave"
+    suspect: null
+    content: |
+      Found on the Curio Room desk beneath a paperweight, in a hand resembling Mr. Hargreave's.
+
+      To whom it may concern,
+
+      I have gone abroad and shall not return. My cabinet of curiosities is to be placed in the care of my partner, Mr. Black,
+      until it can be sold. Do not search for me.
+
+      Septimus Hargreave
+  - key: diary
+    title: Mr. Hargreave's Private Diary
+    doc_type: Diary
+    datetime: Wednesday 25 – Thursday 26 November 1891
+    author: Septimus Hargreave
+    suspect: null
+    content: |
+      PRIVATE DIARY of Septimus Hargreave.
+
+      Wed 25th. Mrs. Reed called again to ask after the Fenwick jade. She insists it was her husband's. It was not. She
+      calls my collection her "cabinet of curiosities", a phrase I find vulgar; it is the Hargreave Collection, nothing less.
+      I told her I shall settle the matter at the Society on Monday and the jade will go to the museum.
+      Thu 26th. Black presses me on the Lisbon sale. I refuse. Eleanor has typed my will and I am reassured. Lane writes he
+      will inspect the Roman glass on Saturday. I shall dine alone tomorrow after Black leaves, and work in the Curio Room.
+  - key: room_inspection
+    title: Curio Room Inspection
+    doc_type: Report
+    datetime: Saturday, 28 November 1891
+    author: Inspector Hollis
+    suspect: null
+    content: |
+      Inspection of the Curio Room, Hargreave House, by Inspector Hollis.
+
+      The door was locked and there was no key in the lock. Key A hangs on Mr. Hargreave's watch chain, which lay on the desk
+      inside the room; Key B is absent from the key cabinet. The window is bolted from inside. There is no sign of struggle. The collection is intact. The lamp on the
+      desk is low and a letter lay on the blotter beneath a paperweight. The door was forced at a quarter past eleven.
+  - key: key_register
+    title: Key Register
+    doc_type: Register
+    datetime: Friday, 27 November 1891
+    author: Mr. Ford, household manager
+    suspect: ford
+    content: |
+      KEY REGISTER — Curio Room keys. Kept by Mr. Ford.
+
+      Key A — kept on Mr. Hargreave's watch chain.
+      Key B — spare, kept in the locked key cabinet in the housekeeper's room.
+
+      Friday 27 Nov.
+      4:00 PM — Key B issued to Mrs. M. Reed, by Mr. Hargreave's permission, to view the jade. (J.F.)
+      4:30 PM — "Returned. M.R." — entry in Mrs. Reed's hand.
+      11:20 PM — Key B found absent from the cabinet. (J.F.)
+  - key: schedule
+    title: Household Schedule for Friday
+    doc_type: Schedule
+    datetime: Friday, 27 November 1891
+    author: Mr. Ford, household manager
+    suspect: ford
+    content: |
+      HOUSEHOLD SCHEDULE — Friday 27 November.
+
+      4:15 PM — Mr. Ford leaves with the carriage; the key cabinet is locked and its key is with him. 6:00 PM — Mr. Ford returns.
+      6:00 PM — Mr. Hargreave and Mr. Black dine in the study. Mr. Black leaves at 7:30 PM.
+      9:00 PM — The garden door is normally bolted. On Fridays it is left unbolted until 10:00 PM for the coal delivery.
+      9:00 PM — Miss White types in the library.
+      9:30 PM — Mr. Ford begins night rounds of the ground floor; ends 10:30 PM.
+      9:30 PM — Mr. Hargreave retires to the Curio Room.
+  - key: messages
+    title: A Set of Messages
+    doc_type: Telegram
+    datetime: Friday, 27 November 1891
+    author: Various
+    suspect: lane
+    content: |
+      MESSAGES received at Hargreave House, Friday 27 November.
+
+      3:40 PM — Telegram from Mr. Lane: "Regret cannot attend this week. Will call Saturday. — Lane."
+      9:20 PM — Note brought to the front door by an errand boy and carried to the Curio Room by Mr. Ford: "H. — The
+      Fenwick fragment is found. Come to the garden gate at ten, alone, and say nothing to Black. — L."
+  - key: visitor_record
+    title: Visitor Record
+    doc_type: Register
+    datetime: Friday, 27 November 1891
+    author: Mr. Dobbs, hall porter
+    suspect: null
+    content: |
+      VISITOR RECORD — kept by Mr. Dobbs at the front door.
+
+      4:00 PM — Mrs. M. Reed in.
+      5:10 PM — Mrs. M. Reed out, by the front door.
+      6:00 PM — Mr. Black in (dinner with Mr. Hargreave).
+      7:30 PM — Mr. Black out.
+      Note: callers by the garden door are not recorded here.
+  - key: timeline
+    title: Reconstructed Timeline (Inspector's Draft)
+    doc_type: Report
+    datetime: Saturday, 28 November 1891
+    author: Inspector Hollis
+    suspect: null
+    content: |
+      TIMELINE (draft) of Friday 27 November.
+
+      7:30 PM — Mr. Black leaves for his club.
+      9:30 PM — Mr. Hargreave retires to the Curio Room; Mr. Ford begins night rounds.
+      9:45 PM — Mr. Ford passes the library; Miss White typing.
+      10:30 PM — Mr. Ford finds the Curio Room door locked; no answer.
+      11:15 PM — Door forced; room empty; letter on the desk.
+      Inspector's note: alibis: Black — club to 10:30; White — library 9:00 to 10:30, confirmed by Ford; Ford — rounds, confirmed
+      by White; Lane — Society lecture 8:00 to 10:30; Reed — home in Kensington after six.
+  - key: coal_receipt
+    title: Coal Merchant's Delivery Receipt
+    doc_type: Receipt
+    datetime: Friday, 27 November 1891
+    author: Messrs. Dawkins & Son, coal merchants
+    suspect: null
+    content: |
+      DAWKINS & SON — Coal Merchants. Delivery receipt, 14 Cavendish Row.
+
+      Four tons, delivered by the garden door between 9:30 PM and 9:55 PM. The door was open and the cellar-hole clear.
+      Receipt signed in the master's absence by a lady in a black veil, who gave the carter a half-crown and said the master was
+      not to be disturbed. The carter did not see her face.
+  - key: black_statement
+    title: Statement of Mr. Arthur Black
+    doc_type: Statement
+    datetime: Saturday, 28 November 1891
+    author: Arthur Black
+    suspect: black
+    content: |
+      Statement of Arthur Black.
+
+      I dined with Septimus until half past seven and then went to my club, where I remained until half past ten. I know
+      nothing of any letter. I am named in it, and I resent it. I wanted the Lisbon sale and I do not deny it.
+  - key: white_statement
+    title: Statement of Miss Eleanor White
+    doc_type: Statement
+    datetime: Saturday, 28 November 1891
+    author: Eleanor White
+    suspect: white
+    content: |
+      Statement of Eleanor White.
+
+      I typed in the library from nine until half past ten. Mr. Ford passed the door at a quarter to ten. At about ten I heard
+      faint voices in the garden, which I took for the coalmen. I wear spectacles and have never worn a veil.
+  - key: ford_statement
+    title: Statement of Mr. James Ford
+    doc_type: Statement
+    datetime: Saturday, 28 November 1891
+    author: James Ford
+    suspect: ford
+    content: |
+      Statement of James Ford.
+
+      I issued Key B to Mrs. Reed at four o'clock and left with the carriage at a quarter past four. I carried a note to Mr.
+      Hargreave at twenty past nine. I did my rounds from half past nine to half past ten and passed the library at a
+      quarter to ten. I saw no lady that night. Mrs. Reed, as ever in her widow's veil, is the only lady of our acquaintance who
+      wears one.
+  - key: lane_statement
+    title: Statement of Mr. Victor Lane
+    doc_type: Statement
+    datetime: Saturday, 28 November 1891
+    author: Victor Lane
+    suspect: lane
+    content: |
+      Statement of Victor Lane.
+
+      I sent a telegram that afternoon saying I could not attend that week. I was at the Antiquarian Society's lecture from
+      eight until half past ten. I sent no note to Mr. Hargreave and wrote nothing to anyone about a garden gate.
+  - key: reed_statement
+    title: Statement of Mrs. Margaret Reed
+    doc_type: Statement
+    datetime: Saturday, 28 November 1891
+    author: Margaret Reed
+    suspect: reed
+    content: |
+      Statement of Margaret Reed.
+
+      I left Cavendish Row at ten past five and was at home in Kensington by six. I dined alone and retired early with a headache.
+      I wrote in the register that I had returned the key. I know nothing of any letter.
+statements:
+  - {suspect: black, doc: black_statement, text: "I dined with Septimus until half past seven and then went to my club, where I remained until half past ten."}
+  - {suspect: white, doc: white_statement, text: "I typed in the library from nine until half past ten. Mr. Ford passed the door at a quarter to ten."}
+  - {suspect: ford, doc: ford_statement, text: "I issued Key B to Mrs. Reed at four o'clock and left with the carriage at a quarter past four."}
+  - {suspect: ford, doc: ford_statement, text: "Mrs. Reed, as ever in her widow's veil, is the only lady of our acquaintance who wears one."}
+  - {suspect: lane, doc: lane_statement, text: "I sent no note to Mr. Hargreave and wrote nothing to anyone about a garden gate."}
+  - {suspect: reed, doc: reed_statement, text: "I left Cavendish Row at ten past five and was at home in Kensington by six."}
+  - {suspect: reed, doc: reed_statement, text: "I wrote in the register that I had returned the key."}
+hints:
+  - >-
+    Dr. Watson: "No single clue will do it, my friend. Look for words and objects that are present where they should not
+    be: whose phrase appears in the letter, and whose key was never truly returned?"
+  - >-
+    Dr. Watson: "Set the key register beside the household schedule. At 4:30 PM, who was there to receive the key? And do
+    not overlook the document that seems irrelevant — the coal merchant's receipt."
+  - >-
+    Dr. Watson: "A lady in a black veil signed for the coal at the garden door. Whom does Mr. Ford say wears a veil? And
+    whose diary says whose phrase is 'a cabinet of curiosities'? Three independent lines, Holmes would say, to one end."
+solution:
+  culprit: reed
+  what: >-
+    Margaret Reed kept the spare key after writing that she had returned it, slipped in by the garden door during the coal
+    delivery, lured Mr. Hargreave out with a forged note, left a letter in her own phrasing on the desk, and locked the Curio
+    Room from outside, taking the key.
+  when: Between about 9:30 PM and 9:55 PM on Friday 27 November, while the garden door stood open.
+  sequence:
+    - "4:00 PM — Reed is issued Key B; Ford leaves at 4:15 PM with the cabinet locked."
+    - "4:30 PM — Reed writes 'Returned. M.R.' in the register, although nobody could receive the key."
+    - "5:10 PM — Reed leaves by the front door."
+    - "9:20 PM — A forged note signed 'L.' summons Hargreave to the garden gate at ten."
+    - "9:30 PM–9:55 PM — The garden door is open for the coal; a lady in a black veil signs for the delivery."
+    - "About 9:45 PM — Hargreave leaves the Curio Room; the letter is placed on the desk; the room is locked from outside."
+    - "11:15 PM — The door is forced; the room is empty."
+  explanation: >-
+    Three independent lines point to Mrs. Reed. (1) The letter's phrase 'cabinet of curiosities' is Mrs. Reed's own phrase
+    per Hargreave's diary, which he dislikes. (2) The key register shows she wrote 'Returned' at 4:30 PM, but the schedule
+    shows the cabinet was locked and Ford away from 4:15 PM, so Key B was never returned; she kept it and the room was locked
+    from outside. (3) The coal merchant's apparently irrelevant receipt records a veiled lady at the garden door between 9:30
+    and 9:55 PM, and Ford says Mrs. Reed alone wears a veil, while White denies she does. Black, White, Ford and Lane are
+    cleared by their alibis and the forged 'L.' note, which Lane denies and his telegram contradicts.
+  insight: >-
+    The 'irrelevant' coal receipt, the false 'returned' key entry and the letter's borrowed phrase together expose Mrs. Reed;
+    each alone is insufficient.
+  required_evidence: [letter, diary, key_register, schedule, coal_receipt]
+  related_evidence: [ford_statement, white_statement, messages, visitor_record, room_inspection, reed_statement, timeline]
+  concepts:
+    - id: c1
+      text: The letter uses the phrase cabinet of curiosities, which the diary shows is Mrs. Reed's phrase and not Hargreave's.
+      keywords: [cabinet of curiosities, phrase, diary, letter, wording]
+    - id: c2
+      text: Reed wrote that she returned Key B at 4:30 but the schedule shows the cabinet was locked and Ford away, so she kept the key.
+      keywords: [key, returned, "4:30", cabinet, locked]
+    - id: c3
+      text: A veiled lady signed the coal receipt at the garden door; Ford says only Mrs. Reed wears a veil.
+      keywords: [veil, coal, receipt, garden door, ford]
+  what_options:
+    - {id: a, text: "Reed kept the spare key, entered by the garden door, lured Hargreave out with a forged note and locked the room from outside.", correct: true}
+    - {id: b, text: "Black wrote the letter and removed Hargreave to force the sale.", correct: false}
+    - {id: c, text: "Ford locked the room with the spare key and hid his master in the cellar.", correct: false}
+    - {id: d, text: "Lane sent the garden-gate note and spirited Hargreave away.", correct: false}
+  when_options:
+    - {id: a, text: "Between about 9:30 PM and 9:55 PM, while the garden door was open for the coal.", correct: true}
+    - {id: b, text: "At 4:30 PM when the key was supposedly returned.", correct: false}
+    - {id: c, text: "At 11:15 PM when the door was forced.", correct: false}
+    - {id: d, text: "At 7:30 PM when Mr. Black left.", correct: false}
+  insight_options:
+    - {id: a, text: "The letter's phrase, the false key return, and the veiled lady on the coal receipt, each independent, all point to Mrs. Reed.", correct: true}
+    - {id: b, text: "The letter names Black, which proves he wrote it.", correct: false}
+    - {id: c, text: "White's spectacles prove she wore the veil.", correct: false}
+    - {id: d, text: "Lane's telegram proves he met Hargreave at the gate.", correct: false}

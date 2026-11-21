@@ -1,0 +1,378 @@
+number: 3
+slug: locked-library
+title: The Locked Library
+difficulty: Medium
+setting: Thornfield Hall, Surrey — Saturday, 18 April 1891
+summary: >-
+  A rare manuscript vanishes from a library that was locked and bolted from the inside.
+introduction: >-
+  At Thornfield Hall, Sir Reginald Thornfield keeps the Aldwyn Psalter, a medieval manuscript worth a fortune, in his
+  private library. At a quarter past ten on Saturday, 18 April 1891, his valet found the library door locked and,
+  when it was forced, bolted on the inside. The Psalter was gone from its case and the east window, though closed,
+  was unlatched. Four people were in and around the library that day, and each tells a different tale of where they
+  were.
+objective: >-
+  Reconstruct the sequence of events. Not every apparent disagreement is a contradiction — check the day, place and
+  event before you accuse anyone.
+places: [library, estate office, east window, terrace, stable yard, tower, billiard room, alcove, desk]
+objects: [Psalter, manuscript, key, bolt, window latch, tower clock, lamp, note, log]
+others:
+  - {name: Sir Reginald Thornfield, gender: m, role: the owner, aliases: [Sir Reginald, the owner, Sir Reginald Thornfield]}
+  - {name: Mr. Fenn, gender: m, role: the valet, aliases: [Fenn, the valet]}
+  - {name: Inspector Hollis, gender: m, role: the inspector, aliases: [Hollis, the inspector]}
+suspects:
+  - key: moore
+    name: Dr. Henry Moore
+    role: a visiting scholar
+    gender: m
+    age: 58
+    aliases: [Moore, Dr. Moore, Henry, the scholar]
+    background: >-
+      A palaeographer from Oxford who has studied the Psalter for a fortnight. Absent-minded, passionate, and
+      rather vain of his expertise.
+    motive: >-
+      Sir Reginald refused to let him publish a transcription of the Psalter.
+    relationship: Guest of Sir Reginald Thornfield.
+    whereabouts: Left the library at twenty past eight on Saturday and played billiards with the curate until after ten.
+    personality: Pedantic, a little pompous, fond of precise dates and days of the week.
+    private_knowledge: >-
+      On Thursday evening at about twenty past nine he saw William Carter inside the library. On Saturday he last left
+      the library at twenty past eight and then played billiards with the curate, Mr. Lyle.
+    does_not_know: What happened in the library after nine on Saturday.
+    deflect: "I am a scholar, not a detective. I can speak only to what I observed, and on which day."
+    topics:
+      - q: "Where were you on Saturday evening? Where were you at nine? When did you last leave the library?"
+        a: >-
+          I left the library at twenty past eight on Saturday, having finished my notes, and then played billiards with
+          the curate, Mr. Lyle, until after ten. He will say so.
+      - q: "Did you see William in the library at 9:20? Why does your statement contradict William's? Did you see Carter after nine?"
+        a: >-
+          I saw William inside the library at twenty past nine — on Thursday evening, not Saturday. I made that plain in
+          my statement. It cannot contradict what he did on Saturday.
+      - q: "Why do you want the Psalter? Did Sir Reginald refuse your request? Do you have a motive?"
+        a: >-
+          Sir Reginald would not allow publication, and I was disappointed. But a scholar does not steal what he
+          wishes to study; the manuscript is worthless to me outside a library.
+      - q: "Where did you sit? What is your seat in the library? Which table?"
+        a: >-
+          My place is at the first table in the east bay, by the window. It is the best light for fine hands.
+      - q: "Who do you suspect? What about William, Alice or Samuel?"
+        a: >-
+          I suspect nobody without cause. I did observe that there are corners in that library where a person may
+          remain unseen from the librarian's desk.
+  - key: carter
+    name: William Carter
+    role: the librarian
+    gender: m
+    age: 46
+    aliases: [Carter, William, Mr. Carter, the librarian]
+    background: >-
+      Nineteen years librarian at Thornfield. Exacting, proprietorial about every volume and bitter at being
+      overlooked for a promotion.
+    motive: >-
+      Sir Reginald threatened to replace him with a younger cataloguer.
+    relationship: Employee of Sir Reginald; keeper of the library.
+    whereabouts: Closed the library at nine on Saturday, locking it from outside.
+    personality: Stiff, defensive when his competence is questioned, precise about hours.
+    private_knowledge: >-
+      He closed the library at nine on Saturday, locked the door from outside, and gave the key to the valet at five
+      past nine. He did not see Miss Grey inside when he locked up. On Thursday he worked late, until after half past
+      nine.
+    does_not_know: That Miss Grey was still inside.
+    deflect: "I have kept this library nineteen years, Inspector. I have never lost a volume."
+    topics:
+      - q: "When did you leave the library on Saturday? What time did you lock the door? Where were you at nine?"
+        a: >-
+          I left at nine o'clock on Saturday and locked the door from the outside. I gave the key to Sir Reginald's valet
+          at five past nine.
+      - q: "Henry says he saw you inside at 9:20. Why does that contradict your statement?"
+        a: >-
+          Dr. Moore saw me on Thursday, not Saturday. On Thursday I worked late. On Saturday I was gone by nine.
+      - q: "Who was in the library when you locked up? Did you see Alice Grey? Who was inside?"
+        a: >-
+          I made my round and saw no one. If anyone was in the east gallery or the alcove I did not see them.
+      - q: "Do you have a motive? Was your position threatened? Why would you steal the Psalter?"
+        a: >-
+          Sir Reginald spoke of a younger man, yes. That is a reason to resign, not to steal. I love that manuscript.
+      - q: "Who signed the access log? Who came in and out? What does the log say?"
+        a: >-
+          Each visitor signs the log himself, at my desk. I enter the closing time. I do not follow people about the
+          shelves.
+  - key: grey
+    name: Alice Grey
+    role: Sir Reginald's personal assistant
+    gender: f
+    age: 33
+    aliases: [Alice, Miss Grey, the assistant]
+    background: >-
+      Sir Reginald's secretary for six years. Efficient, discreet, resentful of being underpaid and secretly engaged
+      to a man in debt.
+    motive: >-
+      Needs money to rescue her fiancé from a creditor.
+    relationship: Employee of Sir Reginald; keeper of the estate office and its stationery.
+    whereabouts: Claims to have been in the estate office writing letters until after ten.
+    personality: Calm, crisp, helpful in manner, volunteers corroborating detail to seem convincing.
+    private_knowledge: >-
+      SECRET (never admit): she went into the library at twenty to nine, hid in the alcove past nine when Carter locked
+      up, bolted the door from inside at about half past nine, took the Psalter and left by the east window at about a
+      quarter to ten, unlatching it from within. She wrote the note. She will deny, offer neat detail and cite the
+      tower clock.
+    does_not_know: That the tower clock stopped at ten past nine.
+    deflect: "I have been Sir Reginald's assistant for six years, Inspector. You may ask him what I am."
+    topics:
+      - q: "Where were you at nine? Where were you at ten? Where were you on Saturday evening?"
+        a: >-
+          In the estate office, writing letters until after ten. I heard the tower clock strike ten while I was sealing
+          the last envelope.
+      - q: "Did you go into the library? When did you last enter the library? When did you leave the library?"
+        a: >-
+          I went in twice on Saturday: at four, to fetch Sir Reginald's letters, and at twenty to nine for his papers.
+          I left at once and returned to the estate office. I never entered the library after that.
+      - q: "Did you hear the tower clock strike ten? How do you know it was ten? What did you hear?"
+        a: >-
+          Certainly. It struck ten as I was sealing the last envelope. The tower clock can be heard clearly from the estate
+          office, and I have never known it to fail.
+      - q: "Why is there no record of you leaving the library? Why does the log show you in and not out? What about the note on estate paper?"
+        a: >-
+          Mr. Carter does not enter exits, and I signed in out of habit. As for estate paper, half the household uses it.
+          I cannot account for every sheet.
+      - q: "Do you need money? Do you have a motive? Why would you want the Psalter?"
+        a: >-
+          I am paid modestly, but I am not a thief, Inspector. Ask Sir Reginald what he thinks of my honesty.
+  - key: price
+    name: Samuel Price
+    role: a maintenance worker
+    gender: m
+    age: 39
+    aliases: [Price, Samuel, Mr. Price, the maintenance worker, the workman]
+    background: >-
+      Estate handyman for fourteen years who looks after lamps, locks, windows and clocks. Plain-spoken, practical, and
+      suspicious of the gentry.
+    motive: >-
+      Held a grudge after being refused a raise, but no sign of debt.
+    relationship: Employee of Sir Reginald; keeper of lamps, windows and the tower clock.
+    whereabouts: Lit the lamps at a quarter to six; later in the stable yard; found the tower clock stopped at 10:25.
+    personality: Blunt, literal, impatient with clever talk.
+    private_knowledge: >-
+      He repaired the east window latch on Friday and tested it. He lit the library lamps from 5:45 to 5:55 on Saturday
+      and did not go in again. On Saturday night he found the tower clock stopped at ten past nine; its cord was frayed.
+    does_not_know: Who was in the library after nine.
+    deflect: "I mind the lamps and the locks and the clock. The rest is gentry business."
+    topics:
+      - q: "What did you do on Saturday evening? Did you go into the library? When did you light the lamps?"
+        a: >-
+          I lit the lamps at a quarter to six and was done by five to six. I did not go in again that day.
+      - q: "Did you repair the window? Was the latch sound? What about the east window?"
+        a: >-
+          I re-set that latch on Friday and tested it. It was fast. Nobody could open it from outside without breaking it.
+      - q: "What time did the tower clock stop? Did the tower clock strike ten? What did you find?"
+        a: >-
+          At twenty-five past ten I found the tower clock stopped at ten past nine. The cord was frayed through. It
+          cannot have struck anything after that. I mended it and restarted it at twenty to eleven.
+      - q: "Where were you at nine? Where were you at a quarter past nine?"
+        a: >-
+          In the stable yard with the horses, until I went to check the lamps at twenty-five past ten.
+      - q: "Do you have a grudge? Do you have a motive? Why would you want the Psalter?"
+        a: >-
+          I asked for a rise and was told no. That is nothing to steal over. I would not know a Psalter from a prayer book.
+documents:
+  - key: library_log
+    title: Library Access Log
+    doc_type: Register
+    datetime: Thursday 16 and Saturday 18 April 1891
+    author: William Carter, librarian (visitors sign in and out themselves)
+    suspect: carter
+    content: |
+      LIBRARY ACCESS LOG — kept at the librarian's desk. Visitors sign themselves in and out; the librarian enters the
+      closing time.
+
+      Thursday 16 April
+      7:00 PM — Dr. Moore in. Mr. Carter on duty until 9:30 PM.
+
+      Saturday 18 April
+      2:10 PM — Dr. Moore in. 5:40 PM — Dr. Moore out.
+      4:00 PM — Miss Grey in (Sir Reginald's letters). 4:15 PM — Miss Grey out.
+      5:45 PM — Mr. Price in (lamps). 5:55 PM — Mr. Price out.
+      8:05 PM — Dr. Moore in. 8:20 PM — Dr. Moore out.
+      8:40 PM — Miss Grey in (Sir Reginald's papers). No exit entered.
+      9:00 PM — Library closed by Mr. Carter; door locked from outside. Key to Sir Reginald's valet at 9:05 PM.
+  - key: maintenance_record
+    title: Maintenance Record — Lamps and Windows
+    doc_type: Record
+    datetime: Friday 17 and Saturday 18 April 1891
+    author: Samuel Price
+    suspect: price
+    content: |
+      MAINTENANCE RECORD — Thornfield Hall, S. Price.
+
+      Fri 17 April — Library east window: latch re-set, hinges oiled, tested and found fast. The window cannot be
+      opened from outside without breaking the latch or the glass.
+      Sat 18 April — 5:45 PM to 5:55 PM: library lamps lit. Did not re-enter the library.
+  - key: clock_record
+    title: Tower Clock Inspection Record
+    doc_type: Record
+    datetime: Saturday, 18 April 1891
+    author: Samuel Price
+    suspect: price
+    content: |
+      TOWER CLOCK INSPECTION RECORD — S. Price.
+
+      Sat 18 April — 10:25 PM: clock found stopped at 9:10. The weight cord had frayed through. A stopped clock does not
+      strike. It struck nine at nine o'clock and has not struck since. New cord fitted; clock restarted and set to the
+      hall clock at 10:40 PM.
+  - key: seating_plan
+    title: Library Seating Plan
+    doc_type: Plan
+    datetime: April 1891
+    author: William Carter
+    suspect: carter
+    content: |
+      LIBRARY SEATING PLAN (description of the draughtsman's sketch).
+
+      The librarian's desk stands at the south end beside the door, facing north. Reading Table 1 (east bay, beside the
+      east window) is Dr. Moore's place. Tables 2 and 3 stand in the centre. The Psalter case is on the west wall. At the
+      north-west corner, behind the tall shelves and the Psalter case, there is an alcove which cannot be seen from the
+      librarian's desk. The door has a lock on the outside and a bolt on the inside.
+  - key: window_note
+    title: Note Found Near the East Window
+    doc_type: Note
+    datetime: Sunday, 19 April 1891
+    author: Unsigned (pencil)
+    suspect: null
+    content: |
+      Found on the floor by the east window on Sunday morning by Inspector Hollis. Pencil on cream laid paper,
+      watermarked "Thornfield Estate Office".
+
+      "Sill clear by ten to ten. Rook's boy at the terrace steps. Burn this."
+
+      Inspector's note: estate-office paper is kept in the estate office, where Miss Grey and Sir Reginald write.
+  - key: sequence
+    title: Sequence of Events (Inspector's Summary)
+    doc_type: Report
+    datetime: Sunday, 19 April 1891
+    author: Inspector Hollis
+    suspect: null
+    content: |
+      SEQUENCE OF EVENTS, Saturday 18 April, as established by the household.
+
+      8:30 PM — Sir Reginald retires to his rooms.
+      9:00 PM — Library closed by Mr. Carter and locked from outside.
+      9:05 PM — Key handed to Sir Reginald's valet, Mr. Fenn.
+      10:15 PM — Mr. Fenn tries to return the key; the door will not open further than the bolt allows.
+      10:20 PM — Door forced. Library empty. The Psalter is gone from its case. The east window is closed but unlatched.
+      The bolt is on the inside. No one was found inside.
+  - key: carter_statement
+    title: Statement of Mr. William Carter
+    doc_type: Statement
+    datetime: Sunday, 19 April 1891
+    author: William Carter
+    suspect: carter
+    content: |
+      Statement of William Carter.
+
+      On Saturday I closed the library at nine o'clock. I left at 9:00 PM and locked the door from the outside. I gave
+      the key to Sir Reginald's valet at five past nine. I did not see Miss Grey, or anyone, in the library when I locked
+      up. On Thursday I worked late, until about half past nine.
+  - key: moore_statement
+    title: Statement of Dr. Henry Moore
+    doc_type: Statement
+    datetime: Sunday, 19 April 1891
+    author: Henry Moore
+    suspect: moore
+    content: |
+      Statement of Dr. Henry Moore.
+
+      On Thursday evening I saw William Carter inside the library at about twenty past nine, putting away the Psalter
+      case. On Saturday I last left the library at twenty past eight and then played billiards with the curate, Mr. Lyle,
+      until after ten.
+  - key: grey_statement
+    title: Statement of Miss Alice Grey
+    doc_type: Statement
+    datetime: Sunday, 19 April 1891
+    author: Alice Grey
+    suspect: grey
+    content: |
+      Statement of Alice Grey.
+
+      I went to the library twice on Saturday, at four o'clock to fetch Sir Reginald's letters and at about twenty to
+      nine to collect his papers. I left at once and returned to the estate office, where I wrote letters until after ten.
+      I heard the tower clock strike ten while I was sealing the last envelope. I never entered the library after twenty
+      to nine.
+  - key: price_statement
+    title: Statement of Mr. Samuel Price
+    doc_type: Statement
+    datetime: Sunday, 19 April 1891
+    author: Samuel Price
+    suspect: price
+    content: |
+      Statement of Samuel Price.
+
+      I lit the library lamps at a quarter to six and finished at five to six. I did not enter the library again on
+      Saturday. I was in the stable yard until twenty-five past ten, when I found the tower clock stopped at ten past
+      nine.
+statements:
+  - {suspect: carter, doc: carter_statement, text: "I left at 9:00 PM and locked the door from the outside."}
+  - {suspect: moore, doc: moore_statement, text: "On Thursday evening I saw William Carter inside the library at about twenty past nine, putting away the Psalter case."}
+  - {suspect: grey, doc: grey_statement, text: "I left at once and returned to the estate office, where I wrote letters until after ten."}
+  - {suspect: grey, doc: grey_statement, text: "I heard the tower clock strike ten while I was sealing the last envelope."}
+  - {suspect: price, doc: price_statement, text: "I was in the stable yard until twenty-five past ten, when I found the tower clock stopped at ten past nine."}
+hints:
+  - >-
+    Dr. Watson: "Beware, my friend: not every pair of statements describes the same day. Before you accuse William or
+    Henry, ask which day each is speaking of."
+  - >-
+    Dr. Watson: "One suspect cites the striking of a clock as her alibi. Have a look at the clock inspection record — what
+    could a stopped clock tell her, and what did it last strike?"
+  - >-
+    Dr. Watson: "Compare Miss Grey's account of leaving the library with the access log and the clock record. The window
+    latch was sound on Friday, so the window must have been opened from within."
+solution:
+  culprit: grey
+  what: >-
+    Alice Grey remained hidden in the library alcove when it was locked at nine, bolted the door from inside, took the
+    Psalter, and left through the east window, claiming a false alibi.
+  when: Between 9:00 PM and about 9:50 PM on Saturday 18 April, after the library was locked.
+  sequence:
+    - "Thu 16 April — Moore sees Carter in the library at 9:20 PM (a different day; no contradiction)."
+    - "Fri 17 April — Price re-sets and tests the east window latch."
+    - "Sat 8:40 PM — Grey signs into the library; no exit is ever recorded."
+    - "9:00 PM — Carter locks up, unaware that she is still inside."
+    - "9:10 PM — The tower clock stops; it cannot strike again."
+    - "About 9:45 PM — Grey leaves by the east window, leaving the note, with the door bolted inside."
+    - "10:15 PM — The valet finds the door bolted; the Psalter is gone."
+  explanation: >-
+    Moore's sighting of Carter was on Thursday and so does not contradict Carter's Saturday account. Grey's alibi rests
+    on hearing the tower clock strike ten, but the clock inspection record shows it stopped at 9:10 and could not strike.
+    The access log shows her entering at 8:40 PM with no exit entered; Carter, who locked up at nine, did not see her
+    in the hidden alcove. The window latch was sound on Friday, so the window was opened from the inside. The note is
+    on estate-office paper.
+  insight: >-
+    The apparent Carter-Moore contradiction was a false lead (different days); the true contradiction is between Grey's
+    claim of hearing the clock strike ten and the record showing it had stopped at 9:10.
+  required_evidence: [grey_statement, clock_record, library_log, maintenance_record]
+  related_evidence: [seating_plan, window_note, sequence, carter_statement, moore_statement, price_statement]
+  concepts:
+    - id: c1
+      text: Grey claimed to hear the tower clock strike ten but the clock record shows it stopped at 9:10 and cannot strike.
+      keywords: [clock, strike, ten, stopped, "9:10"]
+    - id: c2
+      text: The log shows Grey entered at 8:40 PM with no exit, and she stayed hidden in the alcove when Carter locked up.
+      keywords: [log, "8:40", exit, alcove, hidden]
+    - id: c3
+      text: Moore saw Carter on Thursday, a different day, so it does not contradict Carter's Saturday statement.
+      keywords: [thursday, different day, moore, carter, saturday]
+  what_options:
+    - {id: a, text: "Alice Grey hid in the alcove, bolted the door from inside, took the Psalter and left through the window.", correct: true}
+    - {id: b, text: "William Carter locked the Psalter away and pretended it was stolen.", correct: false}
+    - {id: c, text: "Samuel Price opened the window from outside while repairing the latch.", correct: false}
+    - {id: d, text: "Dr. Moore remained in the library after twenty past eight and took the manuscript.", correct: false}
+  when_options:
+    - {id: a, text: "Between 9:00 PM and about 9:50 PM on Saturday, after the library was locked.", correct: true}
+    - {id: b, text: "On Thursday evening at about 9:20 PM.", correct: false}
+    - {id: c, text: "At 4:00 PM on Saturday when Miss Grey fetched the letters.", correct: false}
+    - {id: d, text: "After 10:20 PM when the door was forced.", correct: false}
+  insight_options:
+    - {id: a, text: "Grey's claim to have heard the clock strike ten is impossible because the clock had stopped at 9:10.", correct: true}
+    - {id: b, text: "Moore's 9:20 sighting proves Carter was lying about leaving at nine.", correct: false}
+    - {id: c, text: "The window latch proves Price left it open.", correct: false}
+    - {id: d, text: "The seating plan proves Moore hid in the alcove.", correct: false}

@@ -1,0 +1,360 @@
+number: 4
+slug: vanishing-passenger
+title: The Vanishing Passenger
+difficulty: Medium-Hard
+setting: The 7:40 PM from Waterloo to Clapham Junction — Tuesday, 10 November 1891
+summary: >-
+  A passenger disappears from a crowded compartment, leaving only his luggage behind.
+introduction: >-
+  On Tuesday evening, 10 November 1891, the 7:40 PM train left Waterloo for Clapham Junction, calling briefly at
+  Vauxhall. When it reached Clapham Junction at 7:58 PM, Mr. Alistair Crane, a retired shipping clerk, was gone from
+  Compartment C. His black valise still sat on the rack. The compartment was crowded and every passenger says they saw
+  nothing unusual. But they describe the same few people in very different words.
+objective: >-
+  Work out who was where, and when, by recognising when different descriptions refer to the same person.
+places: [Compartment C, Waterloo, Vauxhall, Clapham Junction, platform, left-hand door, rack, guard's van, barrier]
+objects: [valise, ticket, overcoat, ulster, cane, note, notebook]
+others:
+  - {name: Alistair Crane, gender: m, role: the missing passenger, aliases: [Mr. Crane, Crane, the missing passenger, the old gentleman, the elderly gentleman, my uncle]}
+  - {name: Inspector Lestrade, gender: m, role: the inspector, aliases: [Lestrade, the inspector]}
+suspects:
+  - key: bennett
+    name: Charles Bennett
+    role: a fellow passenger
+    gender: m
+    age: 53
+    aliases: [Bennett, Mr. Bennett, Charles, the stout gentleman, the gentleman in the brown overcoat, the man by the left-hand door]
+    background: >-
+      A stout wool broker from Southwark who wears a heavy chestnut-brown overcoat. Brisk, impatient, with a past
+      dispute over a shipping contract that Mr. Crane exposed.
+    motive: >-
+      Mr. Crane's evidence in a shipping inquiry cost Bennett his licence two years ago.
+    relationship: Stranger to the other passengers on the train; known to Crane by name.
+    whereabouts: Insists he never left his seat on the journey.
+    personality: Gruff, impatient, answers briefly and flatly, resents repetition.
+    private_knowledge: >-
+      SECRET (never admit): he sat in the seat by the left-hand door, persuaded Crane to step down at Vauxhall for a quiet
+      word about the shipping contract, walked him off the platform, and re-boarded at the guard's whistle alone.
+      He will deny everything and insist he never left his seat.
+    does_not_know: What the guard saw.
+    deflect: "I have said I never left my seat, and I shall say it again."
+    topics:
+      - q: "Did you leave your seat? Did you get off the train at Vauxhall? Where were you at 7:46?"
+        a: >-
+          I never left my seat between Waterloo and Clapham. I did not stand and I did not step on to any platform.
+      - q: "Did you speak to Mr. Crane? Did you know the old gentleman? Do you have a history with Crane?"
+        a: >-
+          I did not speak to him. I knew his name from an old business matter and that is all.
+      - q: "Where did you sit? Which seat were you in? Were you by the door?"
+        a: >-
+          I sat in the corner by the left-hand door, as I always do. It is the draught, but I cannot abide the middle
+          of a bench.
+      - q: "Were you wearing a brown overcoat? Who wore a brown coat? What did you wear?"
+        a: >-
+          I own a brown overcoat, like half of London. It is cold in November, Inspector.
+      - q: "Why does Mr. Shaw say the man by the left-hand door helped the old gentleman off? Why does Mills say a man in brown helped him? Why do your statements contradict?"
+        a: >-
+          They are mistaken, or looking at some other man. Half a carriage wears brown. I did not leave my seat.
+      - q: "Where did Mr. Crane go? Who do you think took him? What do you know?"
+        a: >-
+          I have no idea what became of him. He may have stepped down for air. Ask the lady who was travelling with
+          him.
+  - key: emily
+    name: Emily Foster
+    role: Mr. Crane's travelling companion
+    gender: f
+    age: 29
+    aliases: [Emily, Miss Foster, the companion, the lady, the young lady]
+    background: >-
+      Mr. Crane's paid companion and nurse for the past year. Sleepy by habit, honest, and devoted to the old man.
+    motive: >-
+      She would receive a small bequest if Crane died, but has no sign of wanting harm to come to him.
+    relationship: Companion and nurse to Alistair Crane.
+    whereabouts: Dozing against the window; woke at Clapham Junction.
+    personality: Gentle, flustered, tends to assume the best and fill gaps with guesses.
+    private_knowledge: >-
+      She dozed from just after Waterloo. She woke at Clapham to find Mr. Crane gone. She assumed he had stepped down at
+      Vauxhall for air, since he disliked the heat. She did not see him leave and does not know who he left with.
+    does_not_know: Who accompanied Mr. Crane. What he wrote in his pocket diary.
+    deflect: "Oh, I am so sorry, I truly do not know. I was asleep."
+    topics:
+      - q: "Where were you when Mr. Crane left? Did you see him leave? Were you awake at Vauxhall?"
+        a: >-
+          I was dozing against the window. I did not see him leave. I woke when the train reached Clapham and his seat
+          was empty.
+      - q: "Did Mr. Crane step down alone at Vauxhall? Did anyone go with him? Who was with him?"
+        a: >-
+          I assumed he stepped down for air alone, since he found the carriage warm. But I did not see him go, and I
+          cannot say whether anyone accompanied him.
+      - q: "Who sat where? Who was by the left door? Who was next to you?"
+        a: >-
+          I sat beside Mr. Crane. By the left-hand door sat a stout gentleman in a brown overcoat, and across from us a
+          younger gentleman in a blue coat.
+      - q: "Did Mr. Crane mention anyone? Was he afraid? Did he know Mr. Bennett?"
+        a: >-
+          He said little. He seemed uneasy after Waterloo, and kept glancing at the stout gentleman by the door, but I
+          did not think much of it.
+      - q: "Why did you not report him missing? What did you do at Clapham? What about the valise?"
+        a: >-
+          I told the guard at once. The valise is his; he left it on the rack. He would never leave it willingly.
+  - key: mills
+    name: George Mills
+    role: a railway employee (guard)
+    gender: m
+    age: 45
+    aliases: [Mills, Mr. Mills, George, the guard, the railway employee]
+    background: >-
+      A guard of eighteen years on the South Western line. Reliable, observant, by-the-book and keen not to be blamed.
+    motive: >-
+      None known; he fears for his position after a passenger was lost on his train.
+    relationship: Employee of the railway; unconnected with the passengers.
+    whereabouts: At the rear of the train at Vauxhall, in the guard's van.
+    personality: Methodical, formal, deferential, careful to say only what he saw himself.
+    private_knowledge: >-
+      At Vauxhall at 7:46 he saw an elderly gentleman in a grey ulster step on to the platform, supported by a gentleman in
+      a brown overcoat. He was at the rear and blew the whistle at 7:47 and did not see who re-boarded.
+    does_not_know: Who re-boarded; the names of those involved.
+    deflect: "I report only what I have seen, sir, and I did not see more."
+    topics:
+      - q: "What did you see at Vauxhall? Who got off at Vauxhall? Did you see an old gentleman?"
+        a: >-
+          At Vauxhall I saw an elderly gentleman in a grey ulster step down, supported by a gentleman in a brown
+          overcoat. They walked towards the barrier.
+      - q: "Did you see the man in the brown overcoat get back on? Who re-boarded? Why did you not see?"
+        a: >-
+          I did not see him re-board, sir. I was at the rear of the train and blew the whistle at 7:47. That is not to say
+          he did not.
+      - q: "Where were you at 7:46? Where were you at Vauxhall?"
+        a: >-
+          At the rear in the guard's van, sir, until the whistle.
+      - q: "Who was the man in the brown overcoat? Do you know his name? Can you identify him?"
+        a: >-
+          I could not say who he was. I saw the coat and a stout build. You would need the seating arrangement to tell
+          you who sat where.
+      - q: "Did you check the tickets? What happened at Clapham? How many tickets were collected?"
+        a: >-
+          At Clapham the barrier collected three tickets from Compartment C, and no ticket from the missing gentleman. His
+          valise was left on the rack.
+  - key: shaw
+    name: Peter Shaw
+    role: a passenger sitting nearby
+    gender: m
+    age: 26
+    aliases: [Shaw, Mr. Shaw, Peter, the young man, the younger gentleman, the passenger in the blue coat]
+    background: >-
+      A junior clerk in a blue coat, a regular on this train who reads the same newspaper every evening. Observant, shy,
+      and careful about what he saw.
+    motive: >-
+      None known.
+    relationship: Fellow passenger; unconnected to the others.
+    whereabouts: Sat opposite the left-hand door, reading a newspaper.
+    personality: Mild, hesitant, qualifies statements with 'I think' when unsure but is precise about what he observed.
+    private_knowledge: >-
+      He saw the stout man by the left-hand door stand up at Vauxhall, put on a brown overcoat, take the old gentleman's
+      arm, and step down with him. Within a minute the stout man returned alone and sat down, saying nothing.
+    does_not_know: What was said on the platform.
+    deflect: "I think I have told you all I saw, sir."
+    topics:
+      - q: "What did you see at Vauxhall? Did anyone get off? Who got off the train?"
+        a: >-
+          At Vauxhall the stout gentleman by the left-hand door stood up, took the old gentleman's arm, and stepped down with
+          him. I saw them go together.
+      - q: "Did the stout man come back? Who re-boarded? Did anyone return?"
+        a: >-
+          Yes. At the whistle the stout man came back alone and sat down in the corner by the left-hand door. He did not
+          say a word.
+      - q: "Who sat where? Where was Mr. Bennett? Who was by the door?"
+        a: >-
+          I sat opposite the left-hand door in a blue coat. The corner by that door was taken by the stout gentleman; I
+          believe his name is Mr. Bennett, going by the seating arrangement.
+      - q: "Do you know the passengers? What was Mr. Crane like? Did he seem unwell?"
+        a: >-
+          I did not know any of them. The old gentleman looked pale, I thought, but he went with the stout man willingly.
+      - q: "Why were you reading? Did you not notice earlier? Why did you say nothing?"
+        a: >-
+          I thought it was kindness, sir, a gentleman helping an old man off for air. It did not occur to me to say anything.
+documents:
+  - key: tickets
+    title: Railway Tickets and Barrier Record
+    doc_type: Record
+    datetime: Tuesday, 10 November 1891
+    author: South Western Railway Booking Office and Clapham Junction Barrier
+    suspect: null
+    content: |
+      TICKETS ISSUED AT WATERLOO, 7:40 PM train, Compartment C passengers:
+      Mr. A. Crane — third class, Waterloo to Clapham Junction, issued 7:28 PM.
+      Miss E. Foster — third class, Waterloo to Clapham Junction, issued 7:28 PM with Mr. Crane.
+      Mr. C. Bennett — third class, Waterloo to Clapham Junction, issued 7:31 PM.
+      Mr. P. Shaw — third class, season ticket to Clapham Junction.
+      Mr. G. Mills — railway employee, on duty as guard.
+
+      CLAPHAM JUNCTION BARRIER, 7:58 PM — tickets collected from Compartment C: Miss Foster, Mr. Bennett, Mr. Shaw. No
+      ticket collected from Mr. Crane.
+  - key: seating_arrangement
+    title: Compartment C Seating Arrangement
+    doc_type: Plan
+    datetime: Tuesday, 10 November 1891
+    author: George Mills, guard
+    suspect: mills
+    content: |
+      COMPARTMENT C — seating, as noted by the guard at Waterloo, 7:40 PM.
+
+      Platform side at Vauxhall is the LEFT side in the direction of travel. The compartment has two doors, one each side.
+
+      Seat 1 — left-hand door, forward corner: Mr. C. Bennett.
+      Seat 2 — left side, beside Seat 1: Mr. A. Crane.
+      Seat 3 — left side, next: Miss E. Foster.
+      Seat 4 — right side, opposite Seat 1: Mr. P. Shaw (blue coat).
+      Seats 5 to 8 — other passengers, who alighted at Waterloo's far platform and are not on record.
+  - key: station_records
+    title: Station Arrival Records and Train Schedule
+    doc_type: Schedule
+    datetime: Tuesday, 10 November 1891
+    author: South Western Railway Traffic Office
+    suspect: null
+    content: |
+      SCHEDULE — 7:40 PM Waterloo to Clapham Junction (express, one call):
+      7:40 PM — Departs Waterloo.
+      7:46 PM — Arrives Vauxhall. Platform on the left-hand side only.
+      7:47 PM — Departs Vauxhall at the guard's whistle.
+      7:58 PM — Arrives Clapham Junction.
+
+      The train does not stop between Vauxhall and Clapham Junction. A running train cannot be left without alarm.
+  - key: luggage
+    title: Luggage and Passenger Descriptions
+    doc_type: Report
+    datetime: Tuesday, 10 November 1891
+    author: Clapham Junction Lost Property Office
+    suspect: null
+    content: |
+      LUGGAGE AND DESCRIPTIONS — taken at Clapham Junction, 8:10 PM.
+
+      Rack, Compartment C: one black leather valise, initials A.C.; contents — clothes, a Bible, shaving gear. No overcoat.
+      Description of Mr. A. Crane (from Miss Foster and the booking clerk): about sixty-five, grey whiskers, pale, wearing a
+      grey ulster and carrying a silver-topped cane.
+      Description of Mr. C. Bennett (from the booking clerk): stout, about fifty, in a chestnut-brown overcoat and bowler.
+      Description of Mr. P. Shaw: young, thin, in a blue coat.
+  - key: travel_note
+    title: Mr. Crane's Handwritten Travel Note
+    doc_type: Note
+    datetime: Tuesday, 10 November 1891, 7:36 PM
+    author: Alistair Crane (pocket diary)
+    suspect: null
+    content: |
+      Found in the pocket diary left in the valise.
+
+      "7:36 PM. Waterloo. The man in the corner by the left-hand door has been watching me since the booking office. He
+      asked me to step down at V. with him for a quiet word about the old contract. I do not like it. E. is not to be told.
+      If I am not at Clapham, ask at V."
+  - key: bennett_statement
+    title: Statement of Mr. Charles Bennett
+    doc_type: Statement
+    datetime: Wednesday, 11 November 1891
+    author: Charles Bennett
+    suspect: bennett
+    content: |
+      Statement of Charles Bennett to Inspector Lestrade.
+
+      I never left my seat between Waterloo and Clapham Junction. I did not speak to the old gentleman. I sat in the
+      corner of the compartment by the left-hand door. I know nothing of what became of him.
+  - key: emily_statement
+    title: Statement of Miss Emily Foster
+    doc_type: Statement
+    datetime: Wednesday, 11 November 1891
+    author: Emily Foster
+    suspect: emily
+    content: |
+      Statement of Emily Foster.
+
+      I was dozing against the window and did not see Mr. Crane leave. I woke at Clapham Junction and his seat was empty.
+      I assumed he had stepped down at Vauxhall for air, alone, because he found the carriage warm. Beside us, by the
+      left-hand door, sat a stout gentleman in a brown overcoat who kept looking at my master.
+  - key: mills_statement
+    title: Statement of Mr. George Mills, Guard
+    doc_type: Statement
+    datetime: Wednesday, 11 November 1891
+    author: George Mills
+    suspect: mills
+    content: |
+      Statement of George Mills, guard, to Inspector Lestrade.
+
+      At Vauxhall I was at the rear of the train. At about 7:46 PM I saw an elderly gentleman in a grey ulster step down on
+      to the platform, supported by a gentleman in a brown overcoat. I blew the whistle at 7:47 PM. I did not see the
+      gentleman in the brown overcoat get back on the train. I could not say who he was.
+  - key: shaw_statement
+    title: Statement of Mr. Peter Shaw
+    doc_type: Statement
+    datetime: Wednesday, 11 November 1891
+    author: Peter Shaw
+    suspect: shaw
+    content: |
+      Statement of Peter Shaw.
+
+      I sat opposite the left-hand door in a blue coat, reading my newspaper. At Vauxhall the stout gentleman by the
+      left-hand door stood up, took the old gentleman's arm, and stepped down with him. At the whistle the stout
+      gentleman came back alone and sat down. He did not speak to anyone. I thought it was kindness.
+statements:
+  - {suspect: bennett, doc: bennett_statement, text: "I never left my seat between Waterloo and Clapham Junction."}
+  - {suspect: emily, doc: emily_statement, text: "I assumed he had stepped down at Vauxhall for air, alone, because he found the carriage warm."}
+  - {suspect: mills, doc: mills_statement, text: "I did not see the gentleman in the brown overcoat get back on the train."}
+  - {suspect: shaw, doc: shaw_statement, text: "At Vauxhall the stout gentleman by the left-hand door stood up, took the old gentleman's arm, and stepped down with him."}
+  - {suspect: shaw, doc: shaw_statement, text: "At the whistle the stout gentleman came back alone and sat down."}
+hints:
+  - >-
+    Dr. Watson: "Different witnesses use different words — 'the stout gentleman', 'the man in brown', 'the man by the
+    left-hand door'. Ask whether they are all describing the same person."
+  - >-
+    Dr. Watson: "Use the guard's seating arrangement to learn who sat by the left-hand door, and remember which side of
+    the train the platform lay on at Vauxhall."
+  - >-
+    Dr. Watson: "Mr. Mills did not see the man in brown re-board, but he was at the rear; that is no contradiction.
+    Compare Mr. Bennett's claim never to have left his seat with Mr. Shaw's account and the barrier record."
+solution:
+  culprit: bennett
+  what: >-
+    Charles Bennett, seated by the left-hand door, persuaded Mr. Crane to step down at Vauxhall, walked him off the
+    platform, and re-boarded alone at the whistle, then denied ever leaving his seat.
+  when: At Vauxhall, between 7:46 PM and 7:47 PM.
+  sequence:
+    - "7:31 PM — Bennett buys a ticket after Crane."
+    - "7:36 PM — Crane notes that the man by the left-hand door asked him to step down at Vauxhall."
+    - "7:40 PM — Train leaves Waterloo."
+    - "7:46 PM — At Vauxhall (platform on the left), the stout man in brown helps the old gentleman off."
+    - "7:47 PM — The stout man re-boards alone at the guard's whistle."
+    - "7:58 PM — At Clapham, Bennett's ticket is collected; Crane's is not."
+  explanation: >-
+    The seating arrangement places Bennett in Seat 1 by the left-hand door. Crane's note names 'the man in the corner by
+    the left-hand door'. Emily and the guard describe a stout man in a brown overcoat, which the booking clerk's description
+    gives to Bennett. Shaw saw him help Crane off and come back alone. Mills' failure to see him re-board was only because
+    he was at the rear. The platform at Vauxhall was on the left, the door beside Bennett. Emily's belief that Crane stepped
+    down alone was an assumption; she was asleep.
+  insight: >-
+    'The man by the left-hand door', 'the stout gentleman' and 'the gentleman in the brown overcoat' are all one person,
+    Bennett, so his claim never to have left his seat is false.
+  required_evidence: [seating_arrangement, travel_note, shaw_statement, mills_statement, luggage]
+  related_evidence: [tickets, station_records, bennett_statement, emily_statement]
+  concepts:
+    - id: c1
+      text: The left-hand door seat was Bennett's according to the seating arrangement, matching Crane's travel note.
+      keywords: [seat, left-hand door, seating, bennett, note]
+    - id: c2
+      text: The stout gentleman, the man in the brown overcoat and the man by the left-hand door are the same person, Bennett.
+      keywords: [stout, brown overcoat, same person, description, left-hand door]
+    - id: c3
+      text: Shaw saw him help Crane off and return alone at the whistle, contradicting Bennett's claim that he never left his seat; Mills simply did not see him re-board.
+      keywords: [shaw, return, alone, whistle, never left]
+  what_options:
+    - {id: a, text: "Bennett walked Crane off the train at Vauxhall and re-boarded alone before the train left.", correct: true}
+    - {id: b, text: "Crane fell from the moving train between Vauxhall and Clapham Junction.", correct: false}
+    - {id: c, text: "Mills the guard escorted Crane off the train and kept his ticket.", correct: false}
+    - {id: d, text: "Emily Foster pushed Crane from the compartment while the train was moving.", correct: false}
+  when_options:
+    - {id: a, text: "At Vauxhall, about 7:46 to 7:47 PM.", correct: true}
+    - {id: b, text: "At Waterloo, about 7:36 PM.", correct: false}
+    - {id: c, text: "At Clapham Junction, about 7:58 PM.", correct: false}
+    - {id: d, text: "Between Vauxhall and Clapham while the train was running.", correct: false}
+  insight_options:
+    - {id: a, text: "The different descriptions all refer to Bennett, and his claim never to have left his seat is contradicted by Shaw and tied to Crane's note and the seating plan.", correct: true}
+    - {id: b, text: "Mills did not see the man re-board, which proves he never returned.", correct: false}
+    - {id: c, text: "Emily's belief that Crane went alone proves nobody was with him.", correct: false}
+    - {id: d, text: "Shaw's blue coat proves he was the man in brown.", correct: false}

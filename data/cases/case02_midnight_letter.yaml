@@ -1,0 +1,379 @@
+number: 2
+slug: midnight-letter
+title: The Midnight Letter
+difficulty: Medium
+setting: Blackwood House, Kensington — Thursday 19 to Friday 20 November 1891
+summary: >-
+  A shipping magnate receives a threatening letter at midnight and has vanished by morning.
+introduction: >-
+  Mr. Edward Blackwood, senior partner of Blackwood & Blake, Shipping Agents, received an anonymous letter at about
+  midnight on Thursday, 19 November 1891. By half past six the next morning he had left his house and has not been
+  seen since. His grey ledger is missing with him. The police have told the newspapers only that a threatening letter
+  was received; its contents have been withheld. Four people have told Inspector Gregson they knew nothing about it.
+  One of them knows too much.
+objective: >-
+  Discover who is concealing knowledge of the letter. Compare what each suspect says with what was — and was not —
+  made public.
+places: [Wapping Stairs, Kensington, Leadenhall Street, study, hall, Chelsea]
+objects: [letter, grey ledger, ledger, note, letter-box]
+others:
+  - {name: Edward Blackwood, gender: m, role: the missing businessman, aliases: [Mr. Blackwood, Edward, the businessman, Mr. B.]}
+  - {name: Mr. Pym, gender: m, role: the butler, aliases: [Pym, the butler]}
+  - {name: Mr. Overton, gender: m, role: Blackwood's solicitor, aliases: [Overton, the solicitor]}
+  - {name: Inspector Gregson, gender: m, role: the inspector, aliases: [Gregson, the inspector]}
+suspects:
+  - key: blake
+    name: Arthur Blake
+    role: Blackwood's business partner
+    gender: m
+    age: 49
+    aliases: [Blake, Mr. Blake, Arthur, the partner]
+    background: >-
+      Co-founder of Blackwood & Blake. Genial in manner, deeply entangled in the firm's Lisbon account.
+    motive: >-
+      Blackwood demanded an audit of the Lisbon account, which would expose Blake's losses.
+    relationship: Business partner of Edward Blackwood.
+    whereabouts: Says he was at his club until midnight and at home in Chelsea afterwards.
+    personality: Jovial, expansive, talks too much when nervous and uses long sentences.
+    private_knowledge: >-
+      SECRET (never admit): he wrote and delivered the letter himself at five minutes to midnight. He knows its
+      wording: the grey ledger, Wapping Stairs, first light, the lowest step, alone. He will deny any knowledge of
+      the letter, but he is careless and slips when expansive.
+    does_not_know: What the secretary wrote in her diary.
+    deflect: "Come now, Inspector, I am a plain man of business. I know nothing of letters."
+    topics:
+      - q: "Did you know about the letter? Did Edward tell you about the threatening letter? What do you know about it?"
+        a: >-
+          I knew nothing of any letter until Inspector Gregson told me. Edward told me nothing. Though I will say
+          that no sensible man should go alone down to Wapping Stairs at first light with that ledger.
+      - q: "Where were you on Thursday night? Where were you at midnight? Where were you on Friday morning?"
+        a: >-
+          At my club until midnight, then home to Chelsea and to bed. I called at Edward's office earlier in the day,
+          as any partner would.
+      - q: "Why did you ask Margaret where Edward would be on Friday? Why were you asking about his movements?"
+        a: >-
+          A partner takes an interest. We had a meeting to arrange. I asked, as I ask every week, where he would be.
+          It means nothing.
+      - q: "Is there a problem with the Lisbon account? Did Edward demand an audit? Do you have a motive?"
+        a: >-
+          The Lisbon account has had a poor year, as has every account in Lisbon. Edward wished to look over the books.
+          That is hardly a quarrel.
+      - q: "Where did you hear about Wapping Stairs? How do you know about Wapping Stairs and first light? How did you know the details?"
+        a: >-
+          I... surely it was in the papers, or Pym mentioned it. One hears things, Inspector. I could not say where.
+  - key: margaret
+    name: Margaret Wells
+    role: Blackwood's private secretary
+    gender: f
+    age: 36
+    aliases: [Margaret, Miss Wells, the secretary]
+    background: >-
+      Seven years private secretary to Mr. Blackwood. Meticulous diarist. Loyal, and quietly worried by recent events.
+    motive: >-
+      None known. She stands to lose her position if the firm fails.
+    relationship: Secretary and confidante of Edward Blackwood.
+    whereabouts: At home in Chelsea from eight o'clock; arrived at the office on Friday at nine.
+    personality: Reserved, exact, careful with dates and times, dislikes speculation.
+    private_knowledge: >-
+      She knew nothing of the letter until Mr. Pym told her on Friday morning. She noticed Mr. Blake's repeated
+      questions about Friday morning on Thursday. She keeps a detailed diary.
+    does_not_know: The contents of the letter.
+    deflect: "I would rather not speculate, Inspector. My diary records what I know."
+    topics:
+      - q: "Did you know about the letter? What did the letter say? What do you know about the threatening letter?"
+        a: >-
+          I knew nothing of it until Mr. Pym told me on Friday morning that a letter had come at midnight. I have not
+          seen it, and I do not know what it said.
+      - q: "Where were you on Thursday night? Where were you at midnight?"
+        a: >-
+          At home in Chelsea from eight o'clock, as my landlady will confirm. I arrived at the office at nine on
+          Friday and found Mr. Blackwood gone.
+      - q: "What did Mr. Blake ask you? Why did Arthur Blake keep asking about Friday morning?"
+        a: >-
+          Mr. Blake called three times on Thursday and asked where Mr. Blackwood would be on Friday morning, and
+          whether he would have his ledger. I said Mr. Blackwood rarely told me his mornings.
+      - q: "Who do you suspect? What about Thomas Reed, Helen or Arthur?"
+        a: >-
+          I would not name anyone, but I noted what Mr. Blake asked. That is all I will say.
+      - q: "How did Mr. Blackwood seem recently? Was he worried? What was he afraid of?"
+        a: >-
+          He had been quiet since he asked for an audit of the Lisbon account. He was himself on Thursday, though a
+          little tired.
+  - key: reed
+    name: Thomas Reed
+    role: a journalist for the Evening Courier
+    gender: m
+    age: 34
+    aliases: [Reed, Mr. Reed, Thomas, the journalist]
+    background: >-
+      A crime and commerce reporter who interviewed Mr. Blackwood on Tuesday. Ambitious, curious and often an
+      uninvited visitor to inquiry rooms.
+    motive: >-
+      A sensational story; no personal motive to harm Blackwood.
+    relationship: Interviewed Edward Blackwood for a newspaper feature.
+    whereabouts: At the Courier offices until eleven, then at his lodgings in Holborn.
+    personality: Quick, wry, probing; answers questions with questions.
+    private_knowledge: >-
+      He knows only what the police released: that a threatening letter was received. From his own interview he
+      knows Blackwood carried a grey ledger. He has not seen the letter.
+    does_not_know: The contents of the letter.
+    deflect: "A journalist can only report what he has been told, and I have not been told much."
+    topics:
+      - q: "What did Mr. Blackwood say in your interview? What did you discuss on Tuesday?"
+        a: >-
+          He spoke of the firm's growth and joked that he carries his grey ledger everywhere. It all appeared in
+          Tuesday's Courier, word for word, for anyone to read.
+      - q: "Did you know about the letter? What do you know about the letter's contents?"
+        a: >-
+          Only what Inspector Gregson's notice said: that a threatening letter was received and its contents withheld.
+          I do not know what it said.
+      - q: "Where were you on Thursday night? Where were you at midnight?"
+        a: >-
+          At the Courier offices until eleven and then to my lodgings in Holborn. My editor will confirm it.
+      - q: "Who do you suspect? What about Arthur Blake or Margaret Wells?"
+        a: >-
+          I have no evidence against anyone. I will say Mr. Blake seemed anxious when I asked after the firm's accounts.
+  - key: helen
+    name: Helen Blackwood
+    role: Edward Blackwood's cousin and housemate
+    gender: f
+    age: 41
+    aliases: [Helen, Mrs. Blackwood, Miss Blackwood, the cousin, the relative]
+    background: >-
+      A widowed cousin who has lived at Blackwood House for six years. Warm, anxious and attached to Edward.
+    motive: >-
+      She is a beneficiary under Edward's will, but lives modestly and has no known debts.
+    relationship: Cousin of Edward Blackwood, living in his house.
+    whereabouts: In her room upstairs from ten o'clock; heard the letter-box flap at about midnight.
+    personality: Anxious, emotional, tends to repeat herself, honest to a fault.
+    private_knowledge: >-
+      She heard the letter-box flap shortly before midnight but did not go down. She learned from Pym on Friday that a
+      letter had come. She did not see it or read it.
+    does_not_know: The contents of the letter.
+    deflect: "Oh, Inspector, I am so worried. I really do not know any more than I have said."
+    topics:
+      - q: "Did you know about the letter? What did you hear at midnight? Did you see the letter?"
+        a: >-
+          I heard the letter-box flap at about midnight but I did not go down. Pym told me on Friday that a letter had
+          come. I never saw it, Inspector.
+      - q: "Where were you on Thursday night? Where were you at midnight?"
+        a: >-
+          In my room upstairs from ten o'clock, reading. I heard the flap of the box and then Edward's study door.
+      - q: "How was Edward at dinner? Did he seem troubled? Was he afraid?"
+        a: >-
+          He seemed troubled and ate little. I asked him if it was the firm, and he said he preferred not to speak of
+          it.
+      - q: "Do you inherit? Do you have a motive?"
+        a: >-
+          I am his cousin and I believe he provided for me, but I would give it all to have him back.
+documents:
+  - key: letter
+    title: The Anonymous Threatening Letter
+    doc_type: Letter
+    datetime: Thursday, 19 November 1891, delivered about midnight
+    author: Anonymous ("A Friend of the Ledger")
+    suspect: null
+    content: |
+      Mr. Blackwood,
+
+      You have had your warnings. At first light on Friday you will carry the grey ledger down to Wapping Stairs and
+      wait alone on the lowest step. If you bring a constable, or speak of this to any living soul, you will not see
+      Sunday.
+
+      A Friend of the Ledger
+  - key: delivery_record
+    title: Household Delivery Record
+    doc_type: Record
+    datetime: Thursday, 19 November 1891
+    author: Mr. Pym, butler
+    suspect: null
+    content: |
+      HOUSEHOLD DELIVERY RECORD — Blackwood House, kept by Mr. Pym.
+
+      Thursday 19 Nov.
+      8:15 AM — Milk and bread.
+      2:40 PM — Draper's parcel for Mrs. Blackwood.
+      11:55 PM — One letter, hand-delivered, unstamped, found in the letter-box. I took it to Mr. Blackwood at the
+      stroke of midnight. No caller was seen in the hall at that hour.
+
+      Friday 20 Nov.
+      6:30 AM — Mr. Blackwood left the house on foot, carrying his grey ledger. He gave no word of where he was going.
+  - key: diary
+    title: Secretary's Diary
+    doc_type: Diary
+    datetime: Thursday 19 – Friday 20 November 1891
+    author: Margaret Wells
+    suspect: margaret
+    content: |
+      Diary of Margaret Wells.
+
+      Thursday 19th. Mr. B. quite himself, though tired. Mr. Blake called three times in the afternoon, each time
+      asking where Mr. B. would be on Friday morning and whether he would have the ledger with him. I said Mr. B.
+      rarely tells me his mornings. Home to Chelsea at eight.
+
+      Friday 20th. Arrived at nine. Mr. B. gone since half past six, so Pym says. Pym says a letter came at midnight.
+      I know nothing more of it. I do not know what it said.
+  - key: interview
+    title: Newspaper Interview — The Evening Courier
+    doc_type: Newspaper
+    datetime: Tuesday, 17 November 1891
+    author: Thomas Reed
+    suspect: reed
+    content: |
+      THE EVENING COURIER — "A Day with Mr. Blackwood" by Thomas Reed.
+
+      Mr. Edward Blackwood, head of Blackwood & Blake, Shipping Agents of Leadenhall Street, received me in his
+      panelled office. A man of regular habits, he rises early and carries a grey ledger wherever he goes. "I have
+      carried it for twenty years," he laughed. "My partner says it is bolted to my arm." Of the firm's Lisbon trade
+      he would say only that it is "under review."
+  - key: police_notice
+    title: Police Notice in the Press
+    doc_type: Newspaper
+    datetime: Saturday, 21 November 1891
+    author: The Evening Courier, from Inspector Gregson
+    suspect: null
+    content: |
+      THE EVENING COURIER — "Prominent Merchant Missing".
+
+      Mr. Edward Blackwood of Kensington has not been seen since early on Friday morning. Inspector Gregson of Scotland
+      Yard states that a threatening anonymous letter was received at the house on Thursday night. The contents of the
+      letter have been withheld by order of the Inspector, who asks that no one speculate on its wording.
+  - key: private_letter
+    title: Private Letter to Mr. Overton
+    doc_type: Letter
+    datetime: Friday, 20 November 1891, 12:20 AM
+    author: Edward Blackwood
+    suspect: null
+    content: |
+      To Mr. Overton, solicitor — sent by private messenger.
+
+      A letter has come tonight, shortly before midnight. I have told no one of its contents — not Blake, not Margaret,
+      not my cousin. It is a coward's letter, and I shall deal with it myself at first light. I will give you the
+      particulars when I see you. Keep this in confidence.
+
+      E. Blackwood
+  - key: torn_note
+    title: Partially Torn Note
+    doc_type: Note
+    datetime: Friday, 20 November 1891 (found 11 AM)
+    author: Torn from the threatening letter, found in the study grate
+    suspect: null
+    content: |
+      Fragments found in the grate of Mr. Blackwood's study, torn from the lower half of a sheet:
+
+      "...ou will carry the grey le..."
+      "...Wapping Stairs and wait alone on the lo..."
+      "...peak of this to any living so..."
+
+      The paper matches the paper of the letter. The rest of the sheet was not found.
+  - key: blake_statement
+    title: Statement of Mr. Arthur Blake
+    doc_type: Statement
+    datetime: Saturday, 21 November 1891
+    author: Arthur Blake
+    suspect: blake
+    content: |
+      Statement of Arthur Blake to Inspector Gregson.
+
+      I heard nothing of any letter until you told me on Saturday. Edward told me nothing; he was a close man. I called
+      at the house on Thursday afternoon on firm business and left at six. I was at my club until midnight. I only wish
+      Edward had not gone alone down to Wapping Stairs at first light with that ledger under his arm, for no good could
+      come of it. I know nothing more.
+  - key: margaret_statement
+    title: Statement of Miss Margaret Wells
+    doc_type: Statement
+    datetime: Saturday, 21 November 1891
+    author: Margaret Wells
+    suspect: margaret
+    content: |
+      Statement of Margaret Wells to Inspector Gregson.
+
+      I knew nothing of the letter until Mr. Pym told me on Friday morning that one had arrived at midnight. I have not
+      seen it. I do not know what it said. I was at home in Chelsea from eight o'clock on Thursday evening.
+  - key: reed_statement
+    title: Statement of Mr. Thomas Reed
+    doc_type: Statement
+    datetime: Saturday, 21 November 1891
+    author: Thomas Reed
+    suspect: reed
+    content: |
+      Statement of Thomas Reed to Inspector Gregson.
+
+      I know only what your notice states: that a threatening letter was received on Thursday night and that its
+      contents were withheld. I interviewed Mr. Blackwood on Tuesday and he spoke of his grey ledger, as my article
+      shows. I do not know what the letter said. I was at the Courier offices until eleven on Thursday.
+  - key: helen_statement
+    title: Statement of Mrs. Helen Blackwood
+    doc_type: Statement
+    datetime: Saturday, 21 November 1891
+    author: Helen Blackwood
+    suspect: helen
+    content: |
+      Statement of Helen Blackwood to Inspector Gregson.
+
+      Edward seemed troubled at dinner on Thursday. At about midnight I heard the letter-box flap and, a few moments
+      later, his study door. I did not go down. Pym told me on Friday morning that a letter had come. I did not see it
+      and I do not know what it said.
+statements:
+  - {suspect: blake, doc: blake_statement, text: "I heard nothing of any letter until you told me on Saturday. Edward told me nothing."}
+  - {suspect: blake, doc: blake_statement, text: "I only wish Edward had not gone alone down to Wapping Stairs at first light with that ledger under his arm, for no good could come of it."}
+  - {suspect: margaret, doc: margaret_statement, text: "I knew nothing of the letter until Mr. Pym told me on Friday morning that one had arrived at midnight. I do not know what it said."}
+  - {suspect: reed, doc: reed_statement, text: "I know only what your notice states: that a threatening letter was received on Thursday night. I do not know what the letter said."}
+  - {suspect: helen, doc: helen_statement, text: "I did not see the letter and I do not know what it said."}
+hints:
+  - >-
+    Dr. Watson: "Four people swear they knew nothing of the letter. Ask yourself not who had a motive, but who knew
+    something that they could only have learned from the letter itself."
+  - >-
+    Dr. Watson: "Set each suspect's words beside the wording of the letter, and beside what the newspapers did and did
+    not print. The Inspector withheld the contents. Which details were never public?"
+  - >-
+    Dr. Watson: "One suspect names a place and an hour that appear only in the letter, yet Mr. Blackwood's own private
+    note says he told no one of its contents. Compare Mr. Blake's statement with the letter."
+solution:
+  culprit: blake
+  what: >-
+    Arthur Blake wrote and delivered the threatening letter at 11:55 PM to lure Blackwood to Wapping Stairs, then
+    betrayed his knowledge of its private details in his statement.
+  when: The letter was delivered at 11:55 PM on Thursday 19 November; Blackwood left at 6:30 AM on Friday.
+  sequence:
+    - "Tuesday — Blackwood publicly mentions his grey ledger in a newspaper interview."
+    - "Thursday afternoon — Blake calls three times asking where Blackwood will be on Friday morning."
+    - "11:55 PM — A hand-delivered, unstamped letter is posted through the letter-box."
+    - "12:20 AM — Blackwood writes to his solicitor that he has told no one of its contents."
+    - "6:30 AM Friday — Blackwood leaves the house carrying the ledger."
+    - "Saturday — Blake, claiming ignorance, mentions Wapping Stairs and first light."
+  explanation: >-
+    The grey ledger was public from the newspaper interview, but Wapping Stairs, first light and the instruction to go
+    alone appear only in the letter, whose contents the police withheld. Blackwood told his solicitor he had told no one,
+    and the letter arrived after Blake had left. Yet Blake's statement refers to Wapping Stairs at first light. The
+    other three suspects only repeat what was public.
+  insight: >-
+    Blake revealed implicit knowledge: details found only in the withheld letter, though he claimed he never heard of it.
+  required_evidence: [letter, police_notice, blake_statement, private_letter]
+  related_evidence: [delivery_record, diary, interview, torn_note, margaret_statement, reed_statement, helen_statement]
+  concepts:
+    - id: c1
+      text: Blake mentioned Wapping Stairs and first light, details found only in the withheld letter.
+      keywords: [wapping, stairs, first light, letter, details]
+    - id: c2
+      text: The police withheld the contents of the letter and Blackwood told his solicitor he told no one, so Blake could not have learned them innocently.
+      keywords: [withheld, told no one, solicitor, public, notice]
+    - id: c3
+      text: The grey ledger was already public from the interview, so Reed and others knowing it proves nothing.
+      keywords: [ledger, interview, public, reed, newspaper]
+  what_options:
+    - {id: a, text: "Arthur Blake wrote and delivered the letter, then revealed knowledge of its private details.", correct: true}
+    - {id: b, text: "Thomas Reed wrote the letter to create a news story.", correct: false}
+    - {id: c, text: "Margaret Wells delivered the letter after leaving the office.", correct: false}
+    - {id: d, text: "Helen Blackwood took the letter from the box and concealed it.", correct: false}
+  when_options:
+    - {id: a, text: "The letter was delivered at about 11:55 PM on Thursday night.", correct: true}
+    - {id: b, text: "The letter was delivered on Tuesday after the interview.", correct: false}
+    - {id: c, text: "The letter was delivered at 6:30 AM on Friday.", correct: false}
+    - {id: d, text: "The letter was delivered on Saturday after the police notice.", correct: false}
+  insight_options:
+    - {id: a, text: "Blake knew Wapping Stairs and first light, details never published and told to no one, which could only come from the letter.", correct: true}
+    - {id: b, text: "Reed knew about the grey ledger, which proves he sent the letter.", correct: false}
+    - {id: c, text: "Margaret's diary shows she was at the house at midnight.", correct: false}
+    - {id: d, text: "Helen heard the letter-box, which proves she wrote the letter.", correct: false}

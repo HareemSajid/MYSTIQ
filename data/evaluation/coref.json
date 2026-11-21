@@ -1,0 +1,202 @@
+[
+ {
+  "case": 1,
+  "text": "Mr. Whitmore entered the hall. He locked the door.",
+  "speaker": null,
+  "expect": [
+   [
+    "He",
+    "whitmore"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 1,
+  "text": "Eleanor looked at Richard. She assumed he had the emerald.",
+  "speaker": null,
+  "expect": [
+   [
+    "She",
+    "eleanor"
+   ],
+   [
+    "he",
+    "richard"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 1,
+  "text": "I called twice for a footman.",
+  "speaker": "clara",
+  "expect": [
+   [
+    "I",
+    "clara"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 4,
+  "text": "The stout gentleman stood up. He took the old gentleman's arm.",
+  "speaker": null,
+  "expect": [
+   [
+    "He",
+    "bennett"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 6,
+  "text": "Lady Margaret spoke to Mr. Hale. She said he was mistaken.",
+  "speaker": null,
+  "expect": [
+   [
+    "She",
+    "margaret"
+   ],
+   [
+    "he",
+    "hale"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 3,
+  "text": "Miss Grey went to the library. She bolted the door.",
+  "speaker": null,
+  "expect": [
+   [
+    "She",
+    "grey"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 5,
+  "text": "Mary spoke to Mr. Pemberton. He refused her.",
+  "speaker": null,
+  "expect": [
+   [
+    "He",
+    "josiah-pemberton"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 2,
+  "text": "Mr. Blake called at the house. He asked after Mr. Blackwood.",
+  "speaker": null,
+  "expect": [
+   [
+    "He",
+    "blake"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 7,
+  "text": "Mrs. Reed signed the register. She wore a veil.",
+  "speaker": null,
+  "expect": [
+   [
+    "She",
+    "reed"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 3,
+  "text": "Dr. Moore saw Carter in the library. He was putting away the case.",
+  "speaker": null,
+  "expect": [
+   [
+    "He",
+    "carter"
+   ]
+  ],
+  "set": "dev"
+ },
+ {
+  "case": 1,
+  "text": "Mr. Whitmore spoke to Mr. Dunmore in the pantry. He locked the cabinet.",
+  "speaker": null,
+  "expect": [
+   [
+    "He",
+    null
+   ]
+  ],
+  "set": "fresh"
+ },
+ {
+  "case": 1,
+  "text": "Eleanor spoke to Clara in the hall. She fetched a shawl.",
+  "speaker": null,
+  "expect": [
+   [
+    "She",
+    null
+   ]
+  ],
+  "set": "fresh"
+ },
+ {
+  "case": 1,
+  "text": "Clara waited in the hall while Richard smoked. She called for a footman.",
+  "speaker": null,
+  "expect": [
+   [
+    "She",
+    "clara"
+   ]
+  ],
+  "set": "fresh"
+ },
+ {
+  "case": 1,
+  "text": "Richard went to the smoking room. Later he returned to the table.",
+  "speaker": null,
+  "expect": [
+   [
+    "he",
+    "richard"
+   ]
+  ],
+  "set": "fresh"
+ },
+ {
+  "case": 1,
+  "text": "Lord Ashford told Mr. Whitmore that he had locked the study.",
+  "speaker": null,
+  "expect": [
+   [
+    "he",
+    null
+   ]
+  ],
+  "set": "fresh"
+ },
+ {
+  "case": 1,
+  "text": "Eleanor said that I never touched the case.",
+  "speaker": "eleanor",
+  "expect": [
+   [
+    "I",
+    "eleanor"
+   ]
+  ],
+  "set": "fresh"
+ }
+]

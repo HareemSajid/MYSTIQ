@@ -1,0 +1,499 @@
+{
+ "queries": [
+  {
+   "case": 1,
+   "query": "Who took the spare study key from the cabinet?",
+   "relevant": [
+    "access_ledger"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 1,
+   "query": "Did anyone see the hall empty at dinner time?",
+   "relevant": [
+    "clara_statement",
+    "dinner_timeline"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 1,
+   "query": "Who last held the emerald before it was locked away?",
+   "relevant": [
+    "lord_note"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 1,
+   "query": "Was the study lock forced?",
+   "relevant": [
+    "study_report"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 1,
+   "query": "Who sent a note about the mews gate?",
+   "relevant": [
+    "message"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 1,
+   "query": "When was the toast supposed to happen?",
+   "relevant": [
+    "invitation",
+    "dinner_timeline"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 2,
+   "query": "What did the threatening letter demand?",
+   "relevant": [
+    "letter",
+    "torn_note"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 2,
+   "query": "When was the letter delivered?",
+   "relevant": [
+    "delivery_record"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 2,
+   "query": "Did Blackwood tell anyone what the letter said?",
+   "relevant": [
+    "private_letter"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 2,
+   "query": "What did the newspaper reveal about the grey ledger?",
+   "relevant": [
+    "interview"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 2,
+   "query": "Who kept asking where Blackwood would be on Friday?",
+   "relevant": [
+    "diary"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 3,
+   "query": "Was the window latch repaired before the theft?",
+   "relevant": [
+    "maintenance_record"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 3,
+   "query": "When did the tower clock stop?",
+   "relevant": [
+    "clock_record"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 3,
+   "query": "Who signed into the library and never signed out?",
+   "relevant": [
+    "library_log"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 3,
+   "query": "Where could someone hide where the librarian cannot see?",
+   "relevant": [
+    "seating_plan"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 3,
+   "query": "Was Carter still in the library after nine?",
+   "relevant": [
+    "carter_statement",
+    "library_log",
+    "moore_statement"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 4,
+   "query": "Who was sitting by the left-hand door?",
+   "relevant": [
+    "seating_arrangement"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 4,
+   "query": "How long did the train stop at Vauxhall?",
+   "relevant": [
+    "station_records"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 4,
+   "query": "What did the old gentleman write in his diary about the man by the door?",
+   "relevant": [
+    "travel_note"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 4,
+   "query": "Whose tickets were collected at Clapham Junction?",
+   "relevant": [
+    "tickets"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 5,
+   "query": "Who had a second key cut?",
+   "relevant": [
+    "diary"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 5,
+   "query": "When did the regulator clock stop?",
+   "relevant": [
+    "clock_report"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 5,
+   "query": "What did Captain Finch hear at the shop door?",
+   "relevant": [
+    "finch_statement",
+    "customer_register"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 5,
+   "query": "Who offered five hundred pounds for the design?",
+   "relevant": [
+    "technical_letter"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 6,
+   "query": "Who sat at the foot of the table?",
+   "relevant": [
+    "seating"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 6,
+   "query": "Who carried the loving cup to Sir Lucian?",
+   "relevant": [
+    "service_record",
+    "susan_statement",
+    "hale_statement"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 6,
+   "query": "What did the telegram to Manchester say?",
+   "relevant": [
+    "private_message"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 6,
+   "query": "When did Lady Margaret arrive at the house?",
+   "relevant": [
+    "guest_list"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 7,
+   "query": "Who signed for the coal delivery?",
+   "relevant": [
+    "coal_receipt"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 7,
+   "query": "Who borrowed the spare key to see the jade?",
+   "relevant": [
+    "key_register"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 7,
+   "query": "Which phrase does Hargreave find vulgar?",
+   "relevant": [
+    "diary"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 7,
+   "query": "When was the garden door left unbolted?",
+   "relevant": [
+    "schedule"
+   ],
+   "set": "dev"
+  },
+  {
+   "case": 1,
+   "query": "Which memorandum says nobody else held the stone?",
+   "relevant": [
+    "lord_note"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 1,
+   "query": "Was the window of the study forced open?",
+   "relevant": [
+    "study_report"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 1,
+   "query": "Who delivered a note about the mews gate?",
+   "relevant": [
+    "message"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 1,
+   "query": "When did Miss Ashford leave the table for her fan?",
+   "relevant": [
+    "dinner_timeline"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 2,
+   "query": "What did the threatening letter order Blackwood to carry to Wapping Stairs?",
+   "relevant": [
+    "letter"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 2,
+   "query": "Who asked three times where Blackwood would be on Friday?",
+   "relevant": [
+    "diary"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 2,
+   "query": "At what hour was the unstamped letter found in the letter-box?",
+   "relevant": [
+    "delivery_record"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 3,
+   "query": "Which tool shows the tower clock stopped at ten past nine?",
+   "relevant": [
+    "clock_record"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 3,
+   "query": "Who wrote the pencil note found near the east window?",
+   "relevant": [
+    "window_note"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 3,
+   "query": "Was the library east window latch repaired before the weekend?",
+   "relevant": [
+    "maintenance_record"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 4,
+   "query": "What did the guard see at Vauxhall station?",
+   "relevant": [
+    "mills_statement"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 4,
+   "query": "Which note mentions a quiet word about the old contract?",
+   "relevant": [
+    "travel_note"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 4,
+   "query": "Where did the passengers buy tickets and what was the destination?",
+   "relevant": [
+    "tickets"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 5,
+   "query": "Who offered five hundred pounds for the escapement design?",
+   "relevant": [
+    "technical_letter"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 5,
+   "query": "What time did the broken regulator clock stop?",
+   "relevant": [
+    "clock_report"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 5,
+   "query": "Who called at the shop door at twenty past eight?",
+   "relevant": [
+    "customer_register",
+    "finch_statement"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 6,
+   "query": "Who carried the loving cup to the head of the table?",
+   "relevant": [
+    "service_record",
+    "susan_statement",
+    "hale_statement",
+    "margaret_statement"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 6,
+   "query": "Which telegram was sent to Manchester?",
+   "relevant": [
+    "private_message"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 6,
+   "query": "Who arrived late because of fog?",
+   "relevant": [
+    "guest_list"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 7,
+   "query": "Which receipt shows coal delivered through the garden door?",
+   "relevant": [
+    "coal_receipt"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 7,
+   "query": "Who was issued the spare key at four o'clock?",
+   "relevant": [
+    "key_register",
+    "ford_statement"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 7,
+   "query": "Did Miss White ever wear a veil?",
+   "relevant": [
+    "white_statement"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 7,
+   "query": "What did the note brought by an errand boy ask Hargreave to do?",
+   "relevant": [
+    "messages"
+   ],
+   "set": "fresh"
+  },
+  {
+   "case": 7,
+   "query": "Who is recorded entering by the front door at six?",
+   "relevant": [
+    "visitor_record"
+   ],
+   "set": "fresh"
+  }
+ ],
+ "off_topic": [
+  {
+   "case": 1,
+   "query": "What is the capital of France?"
+  },
+  {
+   "case": 3,
+   "query": "How do I bake sourdough bread?"
+  },
+  {
+   "case": 5,
+   "query": "Who won the football match yesterday?"
+  },
+  {
+   "case": 7,
+   "query": "Explain quantum chromodynamics."
+  },
+  {
+   "case": 2,
+   "query": "What is the price of Bitcoin?"
+  },
+  {
+   "case": 2,
+   "query": "What is the boiling point of liquid nitrogen?"
+  },
+  {
+   "case": 5,
+   "query": "Who won the football world cup in 1966?"
+  },
+  {
+   "case": 7,
+   "query": "Explain quantum entanglement in simple terms."
+  }
+ ]
+}

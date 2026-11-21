@@ -1,0 +1,402 @@
+number: 1
+slug: missing-emerald
+title: The Missing Emerald
+difficulty: Medium
+setting: Ashford House, Mayfair — Thursday, 12 March 1891
+summary: >-
+  A priceless emerald vanishes from a locked study during Lord Ashford's private dinner.
+introduction: >-
+  Lord Ashford of Ashford House, Mayfair, has owned the Ashford Emerald for thirty years. On the evening of
+  Thursday, 12 March 1891, he showed the stone to three guests in his study, locked the room, and sat down to
+  dinner at eight o'clock. At half past nine he went to fetch the emerald for a toast to his late wife and found
+  the study door still locked — and the glass case empty. Inspector Hollis has asked for your help before the
+  household disperses.
+objective: >-
+  Establish who removed the emerald from the locked study, and prove it from the documents alone. Beware of
+  confusing what a witness actually saw with what the witness merely supposed.
+places: [study, hall, front hall, pantry, dining room, drawing room, smoking room, cloakroom, mews gate]
+objects: [emerald, key, spare key, key cabinet, ledger, glass case, note, shawl, fan]
+others:
+  - {name: Lord Ashford, gender: m, role: the host, aliases: [his lordship, Lord Ashford, the host, my uncle]}
+  - {name: Mr. Dunmore, gender: m, role: the butler, aliases: [Dunmore, the butler]}
+  - {name: Mrs. Pruett, gender: f, role: the cook, aliases: [Pruett, the cook]}
+  - {name: Inspector Hollis, gender: m, role: the inspector, aliases: [Hollis, the inspector]}
+suspects:
+  - key: eleanor
+    name: Eleanor Ashford
+    role: Lord Ashford's niece
+    gender: f
+    age: 27
+    aliases: [Eleanor, Miss Ashford, the niece]
+    background: >-
+      Orphaned at twelve and raised in her uncle's house. Lively, quick-tongued, and fond of fine dresses she
+      cannot afford.
+    motive: >-
+      Her allowance was halved in January and she owes a dressmaker and a card-club more than four hundred pounds.
+    relationship: Niece and dependent of the victim of the theft.
+    whereabouts: At the dinner table throughout, except a short errand to the drawing room for her fan.
+    personality: Talkative, defensive when pressed about money, prone to filling silences with guesses.
+    private_knowledge: >-
+      She knows she is in debt and that servants gossip about it. She has not touched the emerald. She guessed that
+      Richard had handled the stone because he stood nearest the case, but she did not actually watch him.
+    does_not_know: Where the spare study key was kept after seven o'clock. Anything about the caretaker's note.
+    deflect: "I have told Inspector Hollis everything, and I do not care to be cross-examined in my own uncle's house."
+    topics:
+      - q: "Where were you at half past eight? Did you leave the dining table? Where were you during dinner?"
+        a: >-
+          I sat at table the whole of dinner, save for a minute at about half past eight when I ran to the drawing
+          room for my fan. Ask the footman, he handed me back to my chair.
+      - q: "Did you see Richard Hale return the emerald to its box? Did you actually see him touch the emerald?"
+        a: >-
+          I did not watch him do anything of the kind. I merely assumed it, since he was standing nearest the case
+          when we left the study. I cannot swear that I saw him touch it, no.
+      - q: "Do you need money? Why would you want the emerald? Are you in debt?"
+        a: >-
+          My allowance is small, I do not deny it, and servants will talk. But a lady in want of money does not
+          steal from the uncle who feeds her. I was at dinner.
+      - q: "Who was the last person to hold the emerald? Who saw the emerald last?"
+        a: >-
+          My uncle held it himself the whole time we were in the study. He put it back in its case and locked the door
+          before we went in to dinner. That is the last I saw of it.
+      - q: "Who do you suspect? What about Mr. Whitmore, Richard or Clara?"
+        a: >-
+          I should not like to accuse anyone. Mr. Hale quarrelled with my uncle last month, and Mr. Whitmore has every
+          key in the house. Beyond that I only know what I saw.
+  - key: whitmore
+    name: James Whitmore
+    role: the household caretaker
+    gender: m
+    age: 52
+    aliases: [Whitmore, Mr. Whitmore, the caretaker, James]
+    background: >-
+      Eleven years caretaker at Ashford House. Keeps the cellar, the stables and the key cabinet. Respected, quiet,
+      and always short of money since his brother's failed shop.
+    motive: >-
+      He has debts to a money-lender in Whitechapel and knows every lock in the house.
+    relationship: Employee of Lord Ashford; keeper of the household keys.
+    whereabouts: Claims to have stood at his post in the front hall from eight o'clock until half past nine.
+    personality: Formal, deferential, slow to answer, repeats his official duties when uneasy.
+    private_knowledge: >-
+      SECRET (never admit): he took the spare study key from the cabinet at twenty past eight, opened the study,
+      took the emerald and returned the key at five to nine. He received a note at ten past eight arranging a
+      handover at the mews gate at ten. He will deny, deflect and cite his duties. He never confesses.
+    does_not_know: What Miss Bennett saw in the hall at half past eight.
+    deflect: "I have given my account in writing, sir. I have nothing to add to it."
+    topics:
+      - q: "Where were you at half past eight? Did you leave the hall during dinner? Where were you at 8:30?"
+        a: >-
+          At my post in the front hall, sir, from eight o'clock until his lordship's bell at half past nine. I did
+          not stir from it.
+      - q: "Who has keys to the study? Who had access to the spare key? Who holds the key cabinet key?"
+        a: >-
+          His lordship carries one study key. The spare hangs in the key cabinet in the pantry, and I alone carry
+          the cabinet key. I did not touch the cabinet this evening.
+      - q: "Why does the access ledger show you took the spare key at twenty past eight? Why did Miss Bennett find the hall empty? Why does your statement contradict the ledger?"
+        a: >-
+          Mr. Dunmore is an old man and the pantry clock runs slow. If I stepped to the pantry to give an order to
+          the kitchen, I would hardly call that leaving my post. I never touched the study key.
+      - q: "Do you have debts? How long have you served? Why would you steal the emerald?"
+        a: >-
+          Eleven years I have served his lordship and never a mark against my name. What I owe is my own affair and
+          has nothing to do with this house.
+      - q: "What was the note delivered at ten past eight? Who is P? What is the mews gate?"
+        a: >-
+          A tradesman's boy brought a note about a coal account, sir. I did not keep it. I know nothing of any mews
+          gate arrangement.
+      - q: "Who do you suspect? What about Miss Ashford, Mr. Hale or Miss Bennett?"
+        a: >-
+          Miss Ashford is much in debt, so the servants say, and Mr. Hale quarrelled with his lordship. I do not like
+          to carry tales about my betters.
+  - key: richard
+    name: Richard Hale
+    role: a business associate of Lord Ashford
+    gender: m
+    age: 44
+    aliases: [Hale, Mr. Hale, Richard]
+    background: >-
+      A shipping investor who partnered with Lord Ashford in two ventures. Dry, precise, and easily offended by
+      imprecision.
+    motive: >-
+      He quarrelled with Lord Ashford last month over a failed investment and still believes he was cheated.
+    relationship: Business associate of the victim of the theft.
+    whereabouts: At table throughout dinner, except ten minutes in the smoking room at twenty to nine.
+    personality: Exact, irritable, answers literally and corrects other people's wording.
+    private_knowledge: >-
+      He examined the emerald only as Lord Ashford held it, through his glass, at a quarter past seven. He never
+      touched it. He is annoyed that Eleanor implied otherwise. He took a cigar in the smoking room from twenty to
+      nine until ten to nine.
+    does_not_know: Who took the spare key. Anything about the note to the caretaker.
+    deflect: "I answer only what I am asked, and I should be obliged if you would ask it precisely."
+    topics:
+      - q: "Did you touch the emerald? Did you return the emerald to its box? Miss Ashford says you returned it."
+        a: >-
+          I never said that I had touched the emerald, and I did not. Lord Ashford held it in his own hand while I
+          looked at it through my glass. Miss Ashford is assuming.
+      - q: "Where were you at half past eight? Where were you during dinner? Did you leave the table?"
+        a: >-
+          At table, save for ten minutes at about twenty to nine when I took a cigar in the smoking room, with his
+          lordship's leave. The footman noted it.
+      - q: "Did you quarrel with Lord Ashford? Do you have a motive? Why are you angry with him?"
+        a: >-
+          We disagreed over the Valparaiso shares last month. A disagreement is not a theft, Inspector. I would not
+          risk my name for a green stone.
+      - q: "Who saw the emerald last? Who handled it? Who put it back in the case?"
+        a: >-
+          Lord Ashford handled it throughout and put it back himself at about half past seven. I saw him do so.
+      - q: "Who do you suspect? What about the caretaker, Eleanor or Clara?"
+        a: >-
+          I suspect nobody without evidence. I will say that the person who holds every key in a house is the person
+          who ought to account for them.
+  - key: clara
+    name: Clara Bennett
+    role: a dinner guest
+    gender: f
+    age: 31
+    aliases: [Clara, Miss Bennett, the guest]
+    background: >-
+      A music teacher and a distant acquaintance of Lord Ashford's late wife. Observant, composed and a little
+      shy among the wealthy.
+    motive: >-
+      None apparent beyond her modest means; she met Lord Ashford only twice before.
+    relationship: Acquaintance and guest.
+    whereabouts: At table except a short trip to the cloakroom for her shawl at about half past eight.
+    personality: Polite, careful with words, states plainly what she saw and refuses to guess.
+    private_knowledge: >-
+      She never entered the study after leaving it at half past seven. At about half past eight she went to the
+      hall for her shawl, called twice for a footman and found the hall empty and nobody at the door.
+    does_not_know: Where Mr. Whitmore was at that time. Who held the keys.
+    deflect: "I can only tell you what I saw, Inspector, and nothing that I did not."
+    topics:
+      - q: "Did you enter the study? Did you go into the study after dinner began?"
+        a: >-
+          I went into the study only once, at a quarter past seven, with the others. I did not enter it again that
+          evening. I have never been in that room alone.
+      - q: "Where were you at half past eight? Did you leave the table? What did you see in the hall?"
+        a: >-
+          I went to the hall for my shawl at about half past eight. I called twice for a footman. The hall was
+          empty, and there was no one at the door. I was back at table in eight minutes.
+      - q: "Was Mr. Whitmore in the hall? Did you see the caretaker? Who was at the front door?"
+        a: >-
+          I did not see Mr. Whitmore, or anyone. I can only say the hall was empty when I was in it. I do not know
+          where he was.
+      - q: "Who saw the emerald last? Who held it?"
+        a: >-
+          Lord Ashford held it himself while we looked. He replaced it in its case and led us out. I did not see him
+          lock the door, but I heard the key turn.
+      - q: "Why are you here? Do you know Lord Ashford well? Do you need money?"
+        a: >-
+          I teach the pianoforte and I met Lord Ashford twice before. I have no reason to take anything from him.
+documents:
+  - key: invitation
+    title: Dinner Invitation
+    doc_type: Letter
+    datetime: Monday, 2 March 1891
+    author: Lord Ashford
+    suspect: null
+    content: |
+      Ashford House, Mayfair, 2 March 1891.
+
+      My dear friends,
+
+      I should be honoured if you would dine with me on Thursday the twelfth, at eight o'clock sharp. Before dinner
+      I shall show the Ashford Emerald to a few of you in my study, at a quarter past seven, since I intend to drink
+      a toast to my late wife over the stone itself at half past nine. Dunmore will see that the household is in
+      order. Kindly do not be late.
+
+      Yours sincerely,
+      Ashford
+  - key: access_ledger
+    title: Household Access Record — Key Cabinet Ledger
+    doc_type: Record
+    datetime: Thursday, 12 March 1891
+    author: Mr. Dunmore, butler
+    suspect: whitmore
+    content: |
+      KEY CABINET LEDGER — kept by Mr. Dunmore in the pantry, where he sits beside the cabinet.
+      The cabinet is locked at all times. Its key is held by Mr. Whitmore alone.
+
+      6:00 PM — Cabinet opened by Mr. Whitmore. All spare keys present (Study, Library, Cellar, Conservatory).
+      7:35 PM — Lord Ashford informs me the study is locked with his own key. Spare Study key remains in cabinet.
+      8:20 PM — Cabinet opened by Mr. Whitmore. Spare Study key taken out by him.
+      8:55 PM — Spare Study key returned to the cabinet by Mr. Whitmore. Cabinet locked.
+      9:35 PM — Lord Ashford rings; reports the emerald missing. Spare Study key found in its place.
+
+      Note: the pantry clock was set by the hall clock at noon and agrees with it.
+  - key: whitmore_statement
+    title: Caretaker's Written Statement
+    doc_type: Statement
+    datetime: Friday, 13 March 1891
+    author: James Whitmore
+    suspect: whitmore
+    content: |
+      Statement of James Whitmore, caretaker, to Inspector Hollis.
+
+      I took up my post in the front hall at eight o'clock when dinner was announced. I remained at that post until
+      half past nine, when his lordship's bell was heard. I never touched the key cabinet that evening and I never
+      entered the study. I did not see the emerald after the guests left the study at half past seven. I am a loyal
+      servant of this house and I resent any suggestion otherwise.
+  - key: eleanor_statement
+    title: Statement of Miss Eleanor Ashford
+    doc_type: Statement
+    datetime: Friday, 13 March 1891
+    author: Eleanor Ashford
+    suspect: eleanor
+    content: |
+      Statement of Eleanor Ashford.
+
+      I came down at seven and joined my uncle's guests in the study at a quarter past. I saw the emerald in my
+      uncle's hand. I assumed Richard had returned the emerald to its box before we left the study, since he was
+      standing nearest the case. I did not watch him. I remained at dinner throughout, except for a minute at half
+      past eight when I went to the drawing room for my fan.
+  - key: richard_statement
+    title: Statement of Mr. Richard Hale
+    doc_type: Statement
+    datetime: Friday, 13 March 1891
+    author: Richard Hale
+    suspect: richard
+    content: |
+      Statement of Richard Hale.
+
+      Lord Ashford showed us the emerald at a quarter past seven. I looked at it in his hand through my glass. I
+      never said that I had touched the emerald, and I did not. I sat at dinner throughout, except for ten minutes
+      at twenty to nine when I took a cigar in the smoking room with Lord Ashford's leave. I regret that Miss Ashford
+      should suppose otherwise.
+  - key: clara_statement
+    title: Statement of Miss Clara Bennett
+    doc_type: Statement
+    datetime: Friday, 13 March 1891
+    author: Clara Bennett
+    suspect: clara
+    content: |
+      Statement of Clara Bennett.
+
+      I viewed the emerald in the study at a quarter past seven and left the room with the others at half past seven.
+      I did not enter the study again that evening. At about half past eight I left the dining room for the hall to
+      fetch my shawl from the cloakroom. I called twice for a footman, but the hall was empty and nobody was at the
+      front door. I returned to the table within eight minutes.
+  - key: lord_note
+    title: Lord Ashford's Handwritten Memorandum
+    doc_type: Note
+    datetime: Thursday, 12 March 1891, evening
+    author: Lord Ashford
+    suspect: null
+    content: |
+      Memorandum found in Lord Ashford's desk.
+
+      Showed the emerald to E., R. and C. at a quarter past seven. I held it in my own hand throughout, and no one
+      else handled the stone. I returned it to its case at about twenty-eight minutes past seven, shut the lid, and
+      locked the study with my own key shortly after half past seven. The spare key is in the cabinet where it
+      belongs.
+  - key: study_report
+    title: Study Inspection Report
+    doc_type: Report
+    datetime: Friday, 13 March 1891
+    author: Inspector Hollis
+    suspect: null
+    content: |
+      Inspection of the study, Ashford House, by Inspector Hollis.
+
+      The study door was found locked with its key on Lord Ashford's watch chain. The lock bears no marks of force.
+      The window was latched from the inside and the dust on the sill was undisturbed. The glass case on the table
+      has a hinged lid with a simple catch, and the emerald is missing from it. Messrs. Tompkins, locksmiths, confirm
+      that only two keys to this door exist: his lordship's own and the spare in the key cabinet. Anyone who entered
+      the room therefore did so with one of those two keys.
+  - key: dinner_timeline
+    title: Dinner Timeline
+    doc_type: Schedule
+    datetime: Thursday, 12 March 1891
+    author: Mrs. Pruett, cook
+    suspect: null
+    content: |
+      DINNER TIMELINE — kept by Mrs. Pruett with the footmen Daniel and Hugh.
+
+      8:00 PM — Dinner announced; all four guests and Lord Ashford seated.
+      8:10 PM — Soup served.
+      8:25 PM — Fish served.
+      8:30 PM — Miss Ashford leaves the table for her fan; returns at 8:34 PM.
+      8:30 PM — Miss Bennett leaves the dining room for the hall to fetch her shawl; returns at 8:38 PM and remarks to
+      Daniel that the hall was deserted.
+      8:40 PM — Mr. Hale leaves the table for the smoking room; returns at 8:50 PM.
+      8:45 PM — Roast served.
+      9:10 PM — Pudding served.
+      9:30 PM — Lord Ashford leaves the table to fetch the emerald for the toast.
+  - key: message
+    title: Note Delivered Shortly Before the Disappearance
+    doc_type: Note
+    datetime: Thursday, 12 March 1891, 8:10 PM
+    author: Unsigned, initial "P."
+    suspect: whitmore
+    content: |
+      Note brought to the kitchen door by an errand boy at ten past eight and handed to Mr. Whitmore by the
+      kitchen-maid.
+
+      "J.W. — Our friend will wait at the mews gate at ten. Have the parcel ready. Say nothing to any lady or
+      gentleman at table. — P."
+statements:
+  - {suspect: whitmore, doc: whitmore_statement, text: "I took up my post in the front hall at eight o'clock when dinner was announced. I remained at that post until half past nine."}
+  - {suspect: whitmore, doc: whitmore_statement, text: "I never touched the key cabinet that evening and I never entered the study."}
+  - {suspect: eleanor, doc: eleanor_statement, text: "I assumed Richard had returned the emerald to its box before we left the study, since he was standing nearest the case."}
+  - {suspect: richard, doc: richard_statement, text: "I never said that I had touched the emerald, and I did not."}
+  - {suspect: clara, doc: clara_statement, text: "At about half past eight I left the dining room for the hall to fetch my shawl from the cloakroom. I called twice for a footman, but the hall was empty and nobody was at the front door."}
+  - {suspect: clara, doc: clara_statement, text: "I did not enter the study again that evening."}
+hints:
+  - >-
+    Dr. Watson: "Holmes would first ask what each person actually saw, not what they supposed. Who truly handled the
+    emerald, and who saw it last? Miss Ashford's guess is not evidence."
+  - >-
+    Dr. Watson: "There is a quarter of an hour at table when the hall was unobserved. Set the caretaker's own account of
+    where he stood beside the dinner timeline and Miss Bennett's trip to the cloakroom."
+  - >-
+    Dr. Watson: "Since only two keys exist and his lordship kept his own, ask who could have used the other. Compare the
+    caretaker's claim about the key cabinet with Mr. Dunmore's ledger. Whose claimed movements do not match the
+    record?"
+solution:
+  culprit: whitmore
+  what: >-
+    James Whitmore left his post in the hall, took the spare study key from the cabinet, entered the locked study,
+    took the emerald, relocked the door and returned the key — then lied about all of it.
+  when: Between about 8:20 PM and 8:55 PM, while the household was at dinner.
+  sequence:
+    - "7:15 PM — Lord Ashford shows the emerald to Eleanor, Richard and Clara; he alone handles it."
+    - "7:30 PM — Lord Ashford returns it to its case and locks the study with his own key."
+    - "8:10 PM — A note arrives for Whitmore arranging a handover at the mews gate at ten."
+    - "8:20 PM — Whitmore opens the key cabinet and takes the spare study key (Dunmore's ledger)."
+    - "8:30 PM — Clara finds the hall empty and nobody at the door, contradicting Whitmore's statement."
+    - "8:55 PM — Whitmore returns the spare key."
+    - "9:35 PM — Lord Ashford finds the emerald gone from the locked study."
+  explanation: >-
+    Only two keys exist. Lord Ashford's stayed on his chain. The spare was in a cabinet only Whitmore could open, and
+    Mr. Dunmore's ledger records him taking it at 8:20 and returning it at 8:55. Whitmore swore he never touched the
+    cabinet and never left the hall, but Miss Bennett — a direct witness — found the hall empty at half past eight.
+    Eleanor's remark about Richard is an assumption, not an observation, and Lord Ashford's own memorandum proves no
+    one else handled the stone.
+  insight: >-
+    Distinguishing direct observation (Miss Bennett, Mr. Dunmore's ledger) from assumption (Miss Ashford's guess about
+    Richard) exposed the caretaker's false claim of never leaving the hall.
+  required_evidence: [access_ledger, whitmore_statement, clara_statement, dinner_timeline]
+  related_evidence: [lord_note, study_report, message, eleanor_statement, richard_statement]
+  concepts:
+    - id: c1
+      text: Whitmore took the spare study key from the key cabinet at 8:20 PM according to the butler's ledger.
+      keywords: [key, cabinet, ledger, "8:20", spare]
+    - id: c2
+      text: Whitmore claimed he never left the hall or touched the cabinet, but the ledger and Clara's account contradict him.
+      keywords: [hall, contradict, empty, claimed, statement]
+    - id: c3
+      text: Eleanor only assumed that Richard handled the emerald; it was not an observation, and Lord Ashford held it himself.
+      keywords: [assumed, assumption, eleanor, richard, observation]
+  what_options:
+    - {id: a, text: "The caretaker used the spare key to enter the study while the household was at dinner and took the emerald.", correct: true}
+    - {id: b, text: "Richard Hale took the emerald when he left the table for the smoking room.", correct: false}
+    - {id: c, text: "Eleanor Ashford slipped away at half past eight and broke into the study.", correct: false}
+    - {id: d, text: "Lord Ashford never locked the study and any guest could have walked in.", correct: false}
+  when_options:
+    - {id: a, text: "Around 7:15 PM, during the viewing", correct: false}
+    - {id: b, text: "Between about 8:20 PM and 8:55 PM, during dinner", correct: true}
+    - {id: c, text: "At about 9:30 PM, when Lord Ashford returned", correct: false}
+    - {id: d, text: "After 10:00 PM, at the mews gate", correct: false}
+  insight_options:
+    - {id: a, text: "Miss Ashford's assumption about Richard was not an observation and proved nothing, while the ledger and Miss Bennett's observation contradicted the caretaker.", correct: true}
+    - {id: b, text: "Richard's absence from the table at twenty to nine proves he took the key.", correct: false}
+    - {id: c, text: "Miss Bennett's trip to the hall shows she was looking for the key.", correct: false}
+    - {id: d, text: "Eleanor's debts alone prove she is guilty.", correct: false}
